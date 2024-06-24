@@ -227,9 +227,12 @@ span.hourlypc.text-success {
 }
 
 /* partner-program */
-/* .partner-program{
-    background: url(../images/inner/partner-program.png) ;
-} */
+.partner-program{
+    background: url(../images/inner/partner-program-bg.png) no-repeat center /cover;
+}
+.partner-program-bottom{
+    background: url(../images/inner/partner-program-bg2.png) no-repeat center /cover;
+}
 
 .feature-card-level .feature-img {
     width: clamp(70px, 15px + 5.8vw, 126px);
