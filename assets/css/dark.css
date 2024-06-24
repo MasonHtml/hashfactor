@@ -2,8 +2,40 @@
 html .dark{
     background: var( --white-color);
   }
-  :where(.dark-color) .section-title,
-  :where(.dark-color) p {
+  .dark :where(.dark-color) .section-title,
+  .dark  :where(.dark-color) p {
     color: var(--heading-dark-color);
   }
   
+  .dark .plan{
+    background: #262542;
+  }
+  .dark .effective-pricing{
+    background: #f8f9fa;
+  }
+  .dark .recent-widthdrawals {
+    background: #fff;
+
+  }
+
+  .dark tbody>tr:nth-of-type(odd) {
+    color: var(--primary-color);
+    background-image:none;
+    background-color: #f9f9f9;
+}
+.dark tbody>tr:nth-of-type(even) {
+  color: var(--primary-color);
+}
+.dark .plan.plan--free{
+  background: linear-gradient(#205175, #0a0526) padding-box, linear-gradient(0turn, #033442, #00c3ffa2, #00c5ff) border-box;
+}
+.dark .calculator-footer {
+  background:var(--primary--color, rgb(33 35 37 / 15%));
+
+}
+.dark .calculator-content .btn-primary-outline, .dark .calculator-content .btn-primary-outline-lg{
+  color: var(--primary--color);
+}
+.dark .calculator-head .input-group {
+  background: #fff;
+}
