@@ -165,6 +165,7 @@ background:var(--primary-dark-color);
     width: 5.2em !important;
     align-self: center;
     padding: 10px;
+    
     border-radius: 6px !important;
     -webkit-border-radius: 6px !important;
     -moz-border-radius: 6px !important;
@@ -212,7 +213,7 @@ span.hourlypc.text-success {
 }
 
 .calculator-footer  {
-    background:var(--primary--coloR);
+    background:#110634;
     font-weight: 500;
     font-size: var(--fs-lg);
     color: var(--heading--dark-color);
@@ -249,6 +250,28 @@ background: linear-gradient(#141743, #141743) padding-box, linear-gradient(0turn
 }
 .feature-card-level .feature-content  {
 padding-right: 2vw;
+}
+
+
+
+/* login register */
+.form-left img{
+    width: calc(100% + 1vw);
+    max-width: inherit;
+    margin-left: -5vw;
+}
+.credentials-banner {
+    background: url(../images/inner/form-bg.png) no-repeat center/ cover;
+}
+.credentials-forms .btn{ border-radius:12px ; -webkit-border-radius:12px ; -moz-border-radius:12px ; -ms-border-radius:12px ; -o-border-radius:12px ;
+}
+/* about us */
+.founder-sec {
+    background:  url(../images/inner/founder-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-color: var(--primary-color)
+
 }
 @media (max-width:1280px){
     .calculator-head .input-group img{max-width: 30px;padding: 2%;}

@@ -90,4 +90,23 @@ setTimeout(function() {
   var year = new Date();
   document.getElementById("currentYear").innerHTML = year.getFullYear();
 // });
+document.addEventListener('DOMContentLoaded', function() {
+	var currentUrl = window.location.href;
+  
+	// Get all the links in the navigation menu
+	var menuLinks = document.querySelectorAll('#menu a');
+  
+	// Loop through each link
+	menuLinks.forEach(function(link) {
+	  var linkUrl = link.href;
+	  console.log(linkUrl)
+
+	  // Check if the link URL matches the current page URL
+	  if (currentUrl === linkUrl) {
+		// Add 'active' class to the parent <li> element
+		link.parentNode.classList.add('active');
+	  }
+	});
+  });
+  
 }, 2000);

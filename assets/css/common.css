@@ -1,11 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
   /*-------------colors---------- */
   --primary-color: #141743;
   --primary-dark-color: #141743;
-  --primary-light-color: #141743;
   --white-color:#ffffff ;
   --heading-color: #ffffff;
   --heading--dark-color: #ffffff;
@@ -303,6 +301,9 @@ a {
   text-decoration: none;
   color: currentColor;
 }
+a:hover {
+opacity: .88;
+}
 ul {
   padding: 0;
   list-style: none;
@@ -341,7 +342,17 @@ video {
 .h-70{
   height:clamp(24px, 16px + 3.2vw, 70px);
 }
-/*---------------------scroll bar css------------------ */
+.w-100{
+  width: 100%;
+}
+
+.boder-none{
+  border: none;
+}
+ .text-decoration-underline{
+  text-decoration: underline;
+ }
+ /*---------------------scroll bar css------------------ */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -357,53 +368,13 @@ video {
 ::-webkit-scrollbar-thumb:hover {
   background: var();
 }
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 1);
-  transition: background-color 5000s ease-in-out 0s;
-  box-shadow: inset 0 0 20px 20px rgba(255, 255, 255, 0.15);
-}
-textarea {
-  resize: none;
-}
-input:focus,
-textarea:focus {
-  box-shadow: none;
-  border: 1px solid transparent;
-}
-:focus-visible {
-  outline: none;
-}
-
-/* ------------bootstrap input/accordian reset ---------------*/
-.input-group-text,
-.form-control,
-.form-control:focus {
-  /* color: #fff; */
-  border-color: transparent;
-  /*font-size: clamp(16px, 2vw, 18px);
-  */font-weight: 500;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-}
-.input-group-text {
-  border: 1px solid transparent;
-}
-input.form-control {
-  height: clamp(45px, 3.5vw,50px);
-  border: 1px solid transparent !important;
-}
-select{
+.calculator-head select{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background: url(../images/icon/chevron-down.svg) 95% / 25% no-repeat #eee;
+
+
 }
 body.modal-open,.overflow-hidden {
   overflow: hidden;
