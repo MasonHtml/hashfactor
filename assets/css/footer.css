@@ -28,7 +28,7 @@ footer {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap:clamp(12px, 2px + 1.5vw, 26px) 30px;
+    gap:clamp(12px, 2px + 1.5vw, 26px) clamp(12px, 2px + 1.5vw, 30px);
 }
 
 #scrollToTopBtn {
@@ -48,4 +48,12 @@ aspect-ratio: 1/1;
 }
 #scrollToTopBtn img{
     filter: invert(1);
+}
+
+@media (max-width:576px){
+    .footer-item img {
+        width: min(50%, 417px);
+        margin-inline: auto;
+        display: block;
+    }
 }

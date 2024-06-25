@@ -2,6 +2,7 @@
 .feature-card {
     overflow: hidden;
     background-color: var(--primary-dark-color);
+    background-color: var(--primary-color);
     display: flex; /* Use flexbox */
     flex-direction: column; 
     height: 100%;
@@ -51,3 +52,4 @@
 .feature-card-border {
     background-image: url(../images/home/border-bg.png); background-position: bottom center; background-repeat: no-repeat; background-size: contain;
 }
+

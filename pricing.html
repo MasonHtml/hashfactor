@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/common/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/common/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/common/favicon-16x16.png">
+  <title>HASHFACTOR</title>
+  <script src="assets/js/header-footer.js"></script>
+  <link rel="stylesheet" href="assets/css/bootstrap-grid.css" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/common.css" />
+  <link rel="stylesheet" href="assets/css/component.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="dark">
+  <!-- header start -->
+  <header id="header"></header>
+  <!-- header end -->
+  <!-- banner start -->
+  <section class="effective-pricing">
+    <div class="container-fluid">
+      <div class="col-xl-10 col-lg-10 col-md-10 text-center mx-auto dark-color  section-head">
+        <h2 class="section-title text-center">Pricing</h2>
+        <p class="fs-4xl pb-3">Your choice of how much hardware mining power you need! Flexible pricing, with maximum
+          freedom. Decide for
+          yourself how much hardware mining power you want to book and how much you want to pay. Expandable at any time
+          with discounts for larger investments! Calculator
+        </p>
+        <a href="#calculator" class="btn btn-primary btn-lg"> Calculate</a>
+      </div>
+      <div class="row g-3">
+        <div class="col-lg-3 col-md-6">
+          <div class="plan plan--free  text-center">
+            <h3 class="plan-title neon-color">Free Bonus</h3>
+            <div class="py-40 plan-items">
+              <p class="plan-price fw-bold fs-6xl">0.0000 BTC<span>1.500 TH/s</span></p>
+              <ul class="plan-description">
+                <li><b>0.0004 BTC</b> monthly </li>
+                <li>minings</li>
+                <li>No setup fees</li>
+                <li>Instant Bitcoin mining</li>
+                <li>Limited time offer</li>
+                <li>Upgrade anytime</li>
+              </ul>
+              <a href="login.html" class="btn btn-primary">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="plan plan--blue  text-center">
+            <h3 class="plan-title highlight-color">Beginner</h3>
+            <div class="py-40 plan-items">
+              <p class="plan-price fw-bold fs-6xl">0.0010 BTC<span>7.408 TH/s</span></p>
+              <ul class="plan-description">
+                <li><b>+7% </b> Daily </li>
+                <li>No setup fees</li>
+                <li>Instant Bitcoin mining</li>
+                <li>Minings Withdrawable 24/7</li>
+                <li>Basic Support</li>
+              </ul>
+              <a href="upgrade.html" class="btn btn-primary-outline-lg">Upgrade Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="plan plan--blue  text-center">
+            <h3 class="plan-title">Advanced</h3>
+            <div class="py-40 plan-items">
+              <p class="plan-price fw-bold fs-6xl">0.2750 BTC<span>2.097 PH/s</span></p>
+              <ul class="plan-description">
+                <li>+8% Daily</li>
+                <li>No setup fees</li>
+                <li>Instant Bitcoin mining</li>
+                <li>Minings Withdrawable 24/7</li>
+                <li>Premium Support</li>
+              </ul>
+              <a href="upgrade.html" class="btn btn-primary-outline-lg">Upgrade Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="plan plan--blue  text-center">
+            <h3 class="plan-title">Enterprise</h3>
+            <div class="py-40 plan-items">
+              <p class="plan-price fw-bold fs-6xl">3.5000 BTC<span>40.957 PH/s</span></p>
+              <ul class="plan-description">
+                <li><b>+11% </b> Daily </li>
+                <li>No setup fees</li>
+                <li>Instant Bitcoin mining</li>
+                <li>Minings Withdrawable 24/7</li>
+                <li>Personal Premium Support</li>
+              </ul>
+              <a href="upgrade.html" class="btn btn-primary-outline-lg">Upgrade Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto gradient py-md-4 py-3 text-center mt-lg-5 mt-4 px-3">
+      <p class="fs-2xl fw-semibold mb-0">Unlimited runtime <span class="fw-normal fs-lg">(max. 2 years for inactive
+          users)</span></p>
+    </div>
+  </section>
+  <section id="calculator" class="hardware-mining-power">
+    <div class="container-fluid">
+      <div class="col-xl-10 col-lg-10 col-md-10 text-center mx-auto dark-color  section-head">
+        <h2 class="section-title text-center">Hardware Mining Power for your needs</h2>
+        <p class="fs-4xl">Our listed pricing plans show you recommended examples and rates for effective profit through
+          Bitcoin mining. However, as already mentioned, it is up to you how much power you want to purchase. Use our
+          calculator and get an overview for yourself.
+        </p>
+      </div>
+ <div class="calculator-content rounded-18">
+  <div class="calculator-head gradient p-60 rounded-18 rounded-tb-none">
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="fs-5xl fw-bold">Mining Hardware Costs:</h3>
+        <div class="input-group">
+          <label for="costs" class="input-group-text">
+            <img src="/assets/images/icon/minng-cost.png" alt="mining" width="42" height="42">
+
+          </label><input id="costs" class="price form-control h-70 me-3" type="number" value="-1" autocomplete="off"
+            min="24.02" step="1" max="215605.29">
+            <select class="flex-grow-0 form-select setcurrency d-inline-block"
+            style="width: 6em">
+            <option value="btc" selected="">BTC</option>
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="gbp">GBP</option>
+            <option value="jpy">JPY</option>
+            <option value="rub">RUB</option>
+            <option value="inr">INR</option>
+          </select></div>
+        <div class="mt-3 fs-lg white-color">Costs per unit: <span class="fw-bold unitprice neon-color">8.32 USD</span></div>
+      </div>
+      <div class="col-md-6">
+        <h3 class="fs-5xl fw-bold">Mining Power:</h3>
+        <div class="input-group">
+          <div class="input-group-text text-primary">
+         <img src="/assets/images/icon/minng-power.png" alt="mining" width="42" height="42">
+          </div><output class="form-control fw-bold fs-4xl align-self-center">+<span class="power">2.888 TH/s</span></output>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="primary-bg calculator-body">
+  <h3 class="p-60 pb-0 fs-5xl fw-bold heading--dark-color">Mining rates over time</h3>
+  <ul class="list-group list-group-flush small">
+    <li class="gap-1 list-group-item hstack justify-content-between"><span>Hour:</span><strong
+        class="gap-1 col-9 col-sm-6 col-lg-3 hstack justify-content-between"><span class="hourly">0.07 USD</span><span
+          class="hourlypc text-success">0.28%</span></strong></li>
+    <li class="gap-1 list-group-item hstack justify-content-between"><span>Day:</span><strong
+        class="gap-1 col-9 col-sm-6 col-lg-3 hstack justify-content-between"><span class="daily">1.60 USD</span><span
+          class="dailypc text-success">6.66%</span></strong></li>
+    <li class="gap-1 list-group-item hstack justify-content-between"><span>Week:</span><strong
+        class="gap-1 col-9 col-sm-6 col-lg-3 hstack justify-content-between"><span class="weekly">11.19
+          USD</span><span class="weeklypc text-success">46.60%</span></strong></li>
+    <li class="gap-1 list-group-item hstack justify-content-between"><span>Month:</span><strong
+        class="gap-1 col-9 col-sm-6 col-lg-3 hstack justify-content-between"><span class="monthly">47.98
+          USD</span><span class="monthlypc text-success">199.73%</span></strong></li>
+    <li class="gap-1 list-group-item hstack justify-content-between"><span>Year:</span><strong
+        class="gap-1 col-9 col-sm-6 col-lg-3 hstack justify-content-between"><span class="yearly">583.71
+          USD</span><span class="yearlypc text-success">2430.09%</span></strong></li>
+  </ul>
+  <div class="gap-1 calculator-footer hstack justify-content-between "> Estimated Return on Investment: <strong
+      class="roi text-primary text-nowrap">15 days</strong></div>
+    </div>
+    <div class="btn-group py-60 text-center">
+      <a href="login.html" class="btn btn-primary btn-lg">LogIn</a> 
+      <a href="upgrade.html" class="btn btn-primary-outline-lg btn-lg">Register</a>
+    </div>
+ </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- footer start -->
+  <footer id="footer" class="pb-0"></footer>
+  <!-- footer end -->
+  <!-- modals  -->
+  <div id="modal" class="pb-0"></div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+  </script>
+</body>
+
+</html>

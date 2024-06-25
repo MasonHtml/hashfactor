@@ -1,6 +1,7 @@
 .main-banner {
     background: url(../images/home/banner-bg.png) no-repeat center/ cover;
-    background-color: var(--primary-dark-color)
+    background-color: var(--primary-dark-color);
+    background-color: var(--primary-color)
 }
 
 .bitcoin-features {
@@ -33,7 +34,7 @@ background: #fff;
     background: url(../images/home/pricing-bg.png) no-repeat center/cover;
 }
 
-
+/* plan css */
 .plan {
     border-radius: 1em;
     position: relative;
@@ -62,12 +63,14 @@ background: #fff;
     box-sizing: border-box
 }
 
+
 .plan--free::before{
     background: linear-gradient(#205175, #0a0526) padding-box, linear-gradient(0turn, #033442, #00c3ffa2, #00c5ff) border-box;    border: 2px solid transparent;
 }
 
 .plan--free .plan-title{
     border-bottom: 1px solid #00c5ff8a ;
+    
 }
 .plan--blue::before{
     background: linear-gradient(#262542, #161329) padding-box, linear-gradient(0turn, #222E4E, #5b5a88ad, #5B5A88) border-box;
@@ -105,7 +108,7 @@ ul.plan-description{
 }
 .plan .btn{padding-inline: clamp(22px, 13px + 1.9vw, 48px);  box-shadow: none;  margin-top: auto;}
 
-
+/* home table css */
 .table-responsive {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -133,3 +136,120 @@ ul.plan-description{
     color: var(--blue-color-200);
     text-decoration: underline;
   }
+
+  /* hardware-mining-power */
+  .calculator-body,
+  .calculator-content {
+background:var(--primary-dark-color);
+/* background:var(--primary-color); */
+  }
+  .hardware-mining-power {
+    background: url(../images/home/hardware-mining-power.png) no-repeat center/ cover;
+  }
+
+.calculator-head input,.calculator-head .input-group-text, .calculator-head .input-group{ height:clamp(50px, 16px + 3.2vw, 70px);   background-color: transparent;
+    font-size: var(--fs-4xl);
+    
+}
+.calculator-head .input-group {
+    background: rgb(0 0 0 / 81%);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    overflow: hidden;
+    padding-inline: clamp(10px, 5px + 1.05vw, 24px);
+}
+.calculator-head select{
+    width: 5.2em !important;
+    align-self: center;
+    padding: 10px;
+    border-radius: 6px !important;
+    -webkit-border-radius: 6px !important;
+    -moz-border-radius: 6px !important;
+    -ms-border-radius: 6px !important;
+    -o-border-radius: 6px !important;
+    font-weight:500;
+    font-size: var( --fs-2xl);
+}
+.calculator-head select option{
+    font-size: var( --fs-2xl);
+
+}
+.calculator-head .input-group-text {
+    padding-left: 0;
+    padding-right: var(--fs-xl);
+}
+
+.hardware-mining-power .list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+ color: var(--heading--dark-color);
+}
+.hardware-mining-power  .list-group-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: stretch; 
+    justify-content: space-between;
+    padding-block: clamp(14px,1.4vw, 20px);
+    padding-inline: clamp(15px, 8px + 3.6vw, 60px);    border-top:1px solid var(--border-color);
+    font-size: var(--fs-xl);
+    font-weight: 500;
+}
+
+.hstack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: stretch;
+}
+span.hourlypc.text-success {
+    color: #10B002;
+}
+
+.calculator-footer  {
+    background:var(--primary--coloR);
+    font-weight: 500;
+    font-size: var(--fs-lg);
+    color: var(--heading--dark-color);
+    padding-block: clamp(14px,1.5vw, 20px);
+    padding-inline: clamp(30px, 8px + 3.6vw, 60px);
+    margin-top: clamp(14px,1.4vw, 16px);
+}
+.calculator-head .input-group-text,
+.calculator-head .form-control,
+.calculator-head .form-control:focus {
+  color: var(--heading--dark-color);
+}
+
+/* partner-program */
+.partner-program{
+    background: url(../images/inner/partner-program-bg.png) no-repeat center /cover;
+}
+.partner-program-bottom{
+    background: url(../images/inner/partner-program-bg2.png) no-repeat center /cover;
+}
+
+.feature-card-level .feature-img {
+    width: clamp(70px, 15px + 5.8vw, 126px);
+    height: clamp(70px, 15px + 5.8vw, 126px);
+    margin-bottom: 4%;
+}
+.feature-card-level .feature-img img {
+aspect-ratio: 1/1;
+filter: drop-shadow(0px 0px 54px #969292);
+}
+.gradient-border .feature-card {
+background: linear-gradient(#141743, #141743) padding-box, linear-gradient(0turn, #2E3499, #6e96e77a, #6E97E7) border-box;
+    border: 1px solid transparent;
+}
+.feature-card-level .feature-content  {
+padding-right: 2vw;
+}
+@media (max-width:1280px){
+    .calculator-head .input-group img{max-width: 30px;padding: 2%;}
+}
