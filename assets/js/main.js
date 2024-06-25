@@ -163,5 +163,42 @@ function topFunction() {
     }
   });
 }, 1000)  
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(() => {
+    var tabs = document.querySelectorAll('ul.tabs li');
+    var tabContents = document.querySelectorAll('.tab-content');
+    
+    tabs.forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        var tab_id = this.getAttribute('data-tab');
+        
+        // Remove 'current' class from all tabs and tab contents
+        tabs.forEach(function(tab) {
+          tab.classList.remove('current');
+        });
+        
+        tabContents.forEach(function(content) {
+          content.classList.remove('current');
+        });
+        
+        // Add 'current' class to the clicked tab and corresponding tab content
+        this.classList.add('current');
+        document.getElementById(tab_id).classList.add('current');
+      });
+    });
+  }, 1000);
+});
 
-
+setTimeout(()=>{
+  let copyText = document.querySelector(".copy-text");
+copyText.querySelector("button").addEventListener("click", function () {
+	let input = copyText.querySelector("input.text");
+	input.select();
+	document.execCommand("copy");
+	copyText.classList.add("active");
+	window.getSelection().removeAllRanges();
+	setTimeout(function () {
+		copyText.classList.remove("active");
+	}, 2500);
+});
+}, 1000)

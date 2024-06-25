@@ -1,0 +1,179 @@
+:root {
+    /*-------------colors---------- */
+    --dark-blue:#051139;
+}
+.dark-blue-color{
+    color: var(--dark-blue);
+}
+.dark-blue-bg{
+    background-color: var(--dark-blue);
+}
+.neon-bg{
+background-color: var(--neon-color);
+}
+.blue-color-400{
+    background-color: var(--blue-color-400);
+}
+.tabbing-pages{
+    background: url("../images/common/secondry-bg.png") no-repeat center / cover;
+}
+ul.tabs{
+    flex-direction: column;
+}
+.left-sidebar {
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+}
+.profile-box {
+    padding: 24px;
+}
+.profile-box img {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+}
+.mining-rate{
+    padding: 16px 24px;
+    border-radius: 14px;
+}
+.profile-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.commission-txt{
+    margin-top: clamp(20px, 9px + 1.7273vw, 40px);
+}
+.copy-text {
+	position: relative;
+	padding: 0px;
+	background: var(--primary-color);
+	display: flex;
+	justify-content: space-between;
+}
+.copy-text input.text {
+	padding: 12px 14px;
+	font-size: clamp(14px, 1.4vw, 16px);
+	color: #ffffff80;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+.copy-text button {
+	padding: 12px 30px;
+	background: #0A257E;
+	color: #fff;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.btc-mining-text{
+    color: var(--blue-color-600);
+}
+.copy-text button:active {
+	background: #809ce2;
+}
+.copy-text button:before {
+	content: "Copied";
+	position: absolute;
+	top: -45px;
+	right: 0px;
+	background: #5c81dc;
+	padding: 8px 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	display: none;
+}
+.copy-text button:after {
+	content: "";
+	position: absolute;
+	top: -20px;
+	right: 25px;
+	width: 10px;
+	height: 10px;
+	background: #5c81dc;
+	transform: rotate(45deg);
+	display: none;
+}
+.copy-text.active button:before,
+.copy-text.active button:after {
+	display: block;
+}
+.left-sidebar .account-tabs{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.left-sidebar .account-tabs li{
+    background-color: var(--blue-color-400);
+    border-radius: 10px;
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: clamp(15px, 4.4192px + 1vw, 22px);
+    padding: 17px 24px;
+}
+.left-sidebar .account-tabs li.current{
+ background-color: var(--neon-color);
+ color: var(--white-color);
+ font-weight: 700;
+}
+.perchased-box{
+    border-radius: 10px;
+    color: var(--white-color);
+    font-size: clamp(14px, 5.4176px + 0.7818vw, 18px);
+    padding: 17px 24px;
+    background-color: var(--neon-color);
+    font-weight: 700;
+}
+.right-side {
+    width: calc(100% - 460px);
+}
+.mining-overview{
+    margin-top: 40px;
+    color: var(--white-color);
+}
+.mining-overview-ul{
+    margin-top: 20px;
+}
+.mining-overview-ul li {
+    border-bottom: 1px solid #ffffff24;
+    padding:20px 0;
+}
+.mining-overview-ul li:last-child{
+    border-bottom: none;
+    padding:20px 0;
+}
+
+.left-sidebar .mining-overview{
+padding: 24px;
+margin-top: auto;
+}
+.my-account-tab .account-info{
+padding: 24px;
+border-radius: 12px;
+}
+.main-tabs .tab-content {
+    padding: 0 40px;
+}
+.feedback-box{
+    margin-top: 40px;
+    padding: 40px;
+    background-color: #00C5FF1A;
+    border-radius: 12px;
+    gap: 24px;
+}
+.feedback-box .rate-us-btn{
+    margin-top: 40px;
+}
+.feature-content .rate-us-btn{
+    margin-top: 40px;
+    font-size: var(--fs-md);
+}
+.p-24{
+    padding: 24px;
+}

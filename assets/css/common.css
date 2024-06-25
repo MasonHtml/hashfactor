@@ -18,6 +18,7 @@
   --blue-color-400:#08174A;
   --blue-color-600:#3217E5;
   
+  
   /*-------------font size--------------- */
 --fs-xs: clamp(12px, 1vw, 12px);
 --fs-sm: clamp(13px, 1vw, 14px);
@@ -111,7 +112,7 @@
 
 /*---------------- color css ------------------------- */
 .primary-color {
-  color: var(--primary);
+  color: var(--primary-color);
 }
 .secondary-color {
   color: var(--primary);
