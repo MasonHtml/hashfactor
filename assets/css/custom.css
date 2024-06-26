@@ -5,11 +5,38 @@
 .dark-blue-bg{
     background-color: var(--dark-blue);
 }
+.dark-bg{
+    background: var( --body-bg);
+}
 .neon-bg{
 background-color: var(--neon-color);
 }
 .blue-color-400{
     background-color: var(--blue-color-400);
+}
+.text-red{
+color: red;
+}
+.rounded-12{
+    border-radius: 12px;
+}
+.rounded-8{
+    border-radius: 8px;
+}
+.mt-60{
+    margin-top: clamp(30px, 8px + 3.6vw, 60px);
+}
+.mb-60{
+    margin-bottom: clamp(30px, 8px + 3.6vw, 60px);
+}
+.mt-40{
+    margin-top: clamp(30px, 3vw, 40px);
+}
+.mb-40{
+    margin-bottom: clamp(30px, 3vw, 40px);
+}
+.px-40{
+    padding-inline: clamp(30px, 3vw, 40px);
 }
 .tabbing-pages{
     background: url("../images/common/secondry-bg.png") no-repeat center / cover;
@@ -24,7 +51,7 @@ ul.tabs{
     border-radius: 12px;
 }
 .profile-box {
-    padding: 24px;
+    padding: clamp(15px, 5px + 1.05vw, 24px);
 }
 .profile-box img {
     width: 62px;
@@ -32,11 +59,11 @@ ul.tabs{
     border-radius: 50%;
 }
 .mining-rate{
-    padding: 16px 24px;
+    padding: clamp(12px, 1.4vw, 16px) clamp(15px, 5px + 1.05vw, 24px);
     border-radius: 14px;
 }
 .profile-content {
-    padding: 24px;
+    padding: clamp(15px, 5px + 1.05vw, 24px);
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -52,7 +79,7 @@ ul.tabs{
 	justify-content: space-between;
 }
 .copy-text input.text {
-	padding: 12px 14px;
+	padding: 12px clamp(12px, 1.4vw, 14px);
 	font-size: clamp(14px, 1.4vw, 16px);
 	color: #ffffff80;
 	border: none;
@@ -60,10 +87,10 @@ ul.tabs{
 	background: transparent;
 }
 .copy-text button {
-	padding: 12px 30px;
+	padding: 12px clamp(20px, 9px + 1.7273vw, 30px);
 	background: #0A257E;
 	color: #fff;
-	font-size: 18px;
+	font-size: clamp(14px, 5.4176px + 0.7818vw, 18px);
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -82,7 +109,7 @@ ul.tabs{
 	background: #5c81dc;
 	padding: 8px 10px;
 	border-radius: 20px;
-	font-size: 15px;
+	font-size: clamp(14px, 1.4vw, 15px);
 	display: none;
 }
 .copy-text button:after {
@@ -101,7 +128,7 @@ ul.tabs{
 	display: block;
 }
 .left-sidebar .account-tabs{
-    padding: 24px;
+    padding: clamp(15px, 5px + 1.05vw, 24px);
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -112,7 +139,7 @@ ul.tabs{
     color: var(--white-color);
     font-weight: 400;
     font-size: clamp(15px, 4.4192px + 1vw, 22px);
-    padding: 17px 24px;
+    padding: clamp(14px, 5.4176px + 0.7818vw, 17px) clamp(15px, 5px + 1.05vw, 24px);
 }
 .left-sidebar .account-tabs li.current{
  background-color: var(--neon-color);
@@ -123,7 +150,7 @@ ul.tabs{
     border-radius: 10px;
     color: var(--white-color);
     font-size: clamp(14px, 5.4176px + 0.7818vw, 18px);
-    padding: 17px 24px;
+    padding: clamp(14px, 5.4176px + 0.7818vw, 17px) clamp(15px, 5px + 1.05vw, 24px);
     background-color: var(--neon-color);
     font-weight: 700;
 }
@@ -131,46 +158,214 @@ ul.tabs{
     width: calc(100% - 460px);
 }
 .mining-overview{
-    margin-top: 40px;
+    margin-top: clamp(20px, 9px + 1.7273vw, 40px);
     color: var(--white-color);
 }
 .mining-overview-ul{
-    margin-top: 20px;
+    margin-top: clamp(14px, 6.5px + 0.7839vw, 20px);
 }
 .mining-overview-ul li {
     border-bottom: 1px solid #ffffff24;
-    padding:20px 0;
+    padding:clamp(14px, 6.5px + 0.7839vw, 20px) 0;
 }
 .mining-overview-ul li:last-child{
     border-bottom: none;
-    padding:20px 0;
+    padding:clamp(14px, 6.5px + 0.7839vw, 20px) 0;
 }
 
 .left-sidebar .mining-overview{
-padding: 24px;
+padding: clamp(15px, 5px + 1.05vw, 24px);
 margin-top: auto;
 }
 .my-account-tab .account-info{
-padding: 24px;
+padding: clamp(15px, 5px + 1.05vw, 24px);
 border-radius: 12px;
 }
 .main-tabs .tab-content {
-    padding: 0 40px;
+    padding: 0 clamp(20px, 9px + 1.7273vw, 40px);
 }
 .feedback-box{
-    margin-top: 40px;
-    padding: 40px;
+    margin-top: clamp(20px, 9px + 1.7273vw, 40px);
+    padding: clamp(20px, 9px + 1.7273vw, 40px);
     background-color: #00C5FF1A;
     border-radius: 12px;
-    gap: 24px;
+    gap: clamp(15px, 5px + 1.05vw, 24px);
 }
 .feedback-box .rate-us-btn{
-    margin-top: 40px;
+    margin-top: clamp(20px, 9px + 1.7273vw, 40px);
 }
 .feature-content .rate-us-btn{
-    margin-top: 40px;
+    margin-top: clamp(20px, 9px + 1.7273vw, 40px);
     font-size: var(--fs-md);
 }
 .p-24{
-    padding: 24px;
+    padding: clamp(15px, 5px + 1.05vw, 24px);
+}
+.px-24{
+    padding-inline: clamp(15px, 5px + 1.05vw, 24px);
+}
+.my-account-tab .hardware-mining-power{
+    background:transparent !important;
+}
+.my-account-tab .calculator-body {
+    border-radius: 0 0 16px 16px;
+}
+.upgrade-miner-tab .calculator-head input{
+    font-size: clamp(15px, 5px + 1.05vw, 24px);
+}
+.inner-tabs .inner-tabbing-btn{
+    font-size: var(--fs-lg);
+    font-weight: 700;
+    line-height: 1.6;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: baseline;
+    -moz-column-gap: 0.25rem;
+    column-gap: 0.25rem;
+    white-space: nowrap;
+    box-shadow: 4px 4px 14px 0 rgba(0, 0, 0, 0.4);
+    border-radius: clamp(5px, .8vw, 8px);
+    transition: 0.3s;
+    cursor: pointer;
+    padding-block: clamp(12px, 2.5px + .81vw, 18px);
+    padding-inline: clamp(1.125rem, 0.9068rem + 1.0909vw, 1.875rem);
+    --_button-hover: var(--hover, var(--primary-color));
+    --_button-hover-text: var(--hover-text, var(--white-color));
+    min-height: 48px;
+    min-width: 95px;
+    background:transparent;
+    color: #fff;
+    margin: 0;
+}
+.inner-tabs .inner-tabbing-btn.current{
+    background-image: linear-gradient(63deg, #7817ff 3%, #48b5f5 131%);
+    --hover-text: #fdfdfdc0;
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+.inner-tabbing .inner-tabs {
+gap: 2px;
+}
+.inner-tabs .inner-tabbing-btn.current{
+    border-bottom: 0px !important;
+}
+.deposite-address{
+width: fit-content;
+padding: 12px clamp(15px, 2px + 1.5vw, 26px);
+margin: auto;
+}
+.qr-code-image{
+    height: min(100%, 400px);
+    width: min(100%, 400px);
+}
+.qr-amount-box{
+    max-width: 470px;
+    margin: auto;
+}
+.qr-warning-box li{
+list-style-type: disc;
+}
+.inner-tab-content .mining-overview{
+background-color: var(--blue-color-400);
+}
+.no-data-txt{
+    border-bottom: 1px solid #ffffff14;
+    padding-block: clamp(14px, 6.5px + 0.7839vw, 20px);
+}
+#PowerCalculator .modal-dialog.modal-dialog-scrollable {
+    width: min(92%, 1360px);
+}
+
+#PowerCalculator .modal-dialog .modal-content {
+    padding: clamp(20px, 9px + 1.7273vw, 40px);
+    background: #051139;
+    border-radius: 12px;
+    overflow: auto;
+}
+#PowerCalculator .modal-dialog  .calculator-head input{
+font-size: clamp(15px, 5px + 1.05vw, 24px);
+}
+#PowerCalculator .modal-dialog .calculator-body {
+    border-radius: 0 0 18px 18px;
+}
+#PowerCalculator .close-btn {
+    right: 20px;
+    top: 20px;
+    width: 35px;
+    height: 35px;
+    filter: invert(1);
+}
+.mining-tab-text {
+    position: relative;
+    margin-top: -20px;
+    border-radius: 0 0 12px 12px;
+}
+#PowerCalculator .hardware-mining-power .list-group-item {
+    font-size:clamp(14px, 6.5px + 0.7839vw, 20px) ;
+}
+#PowerCalculator .calculator-footer{
+font-size: clamp(15px, 4.4192px + 1vw, 22px);
+}
+.Partnership-box li span{
+color: #48B5F5;
+font-weight: 600;
+}
+.banner-select {
+    width: 100%;
+    font-size: clamp(15px, 5px + 1.05vw, 24px);
+    padding: clamp(14px, 6.5px + 0.7839vw, 20px) clamp(15px, 5px + 1.05vw, 24px);
+    background-color: #000122;
+    color: #fff;
+    background-size: 45px;
+    background-position: 99% 12px;
+    background-image: url(../images/icon/chevron-down-white.svg);
+    background-repeat: no-repeat;
+    appearance: none;
+}
+.partnership-banner-box img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 400px;
+}
+.cst-textarea {
+    padding: 16px clamp(15px, 5px + 1.05vw, 24px);
+    width: 100%;
+    resize: auto;
+    text-align: start;
+    border-radius: 12px;
+}
+.cst-textarea-dark {
+    background-color: #000122;
+    color: #fff;
+}
+.dark-blue-div{
+    background-color: #000122;
+}
+.authentication-link{
+    text-decoration: underline;
+}
+.cst-gradian-bg{
+    background: linear-gradient(90deg, #353585 0%, #171785 100%);    
+}
+.cst-gradian-bg.p-24{
+    padding-block: clamp(15px, 4.4192px + 1vw, 22px);
+}
+.Preferences-tab .qr-code-image{
+    height: min(100%, 160px);
+    width: min(100%, 160px);
+}
+.transparent-input{
+    background-color: transparent;
+    width: 100%;
+    border: none;
+}
+.transparent-input:focus{
+    border: none;
+}
+.tabbing-pages .calculator-head input,.tabbing-pages  .calculator-head .input-group-text,.tabbing-pages  .calculator-head .input-group{
+    font-size: var(--fs-2xl);
+    font-weight: 700 !important;
 }

@@ -194,7 +194,7 @@
                                     </div>
                                 </div>
                             </section>
-                            <div class="pb-60">
+                            <div class="py-60 pt-0">
                                 <div class="mining-overview mt-0">
                                     <p class="text-start fs-3xl fw-bold">Overview</p>
                                     <ul class="mining-overview-ul">
@@ -217,9 +217,90 @@
                                     </ul>
                                 </div>
                             </div>
+                            <div class="calculator-content rounded-18 hardware-mining-power">
+                                <p class="text-start fs-3xl fw-bold py-40 pt-0 mb-0">Mining Power Calculator</p>
+                                <div class="calculator-head gradient p-60 py-40  rounded-18 rounded-tb-none">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3 class="fs-5xl fw-bold">Mining Hardware Costs:</h3>
+                                            <div class="input-group">
+                                                <label for="costs" class="input-group-text">
+                                                    <img src="/assets/images/icon/minng-cost.png" alt="mining"
+                                                        width="42" height="42">
+
+                                                </label><input id="costs" class="price form-control h-70 me-3"
+                                                    type="number" value="0.00039000" autocomplete="off" min="24.02"
+                                                    step="1" max="215605.29">
+                                                <select class="flex-grow-0 form-select setcurrency d-inline-block"
+                                                    style="width: 6em">
+                                                    <option value="btc" selected="">BTC</option>
+                                                    <option value="usd">USD</option>
+                                                    <option value="eur">EUR</option>
+                                                    <option value="gbp">GBP</option>
+                                                    <option value="jpy">JPY</option>
+                                                    <option value="rub">RUB</option>
+                                                    <option value="inr">INR</option>
+                                                </select>
+                                            </div>
+                                            <div class="mt-3 fs-lg white-color">Costs per unit: <span
+                                                    class="fw-bold unitprice neon-color"> 0.00013500 BTC</span></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="fs-5xl fw-bold">Mining Power:</h3>
+                                            <div class="input-group">
+                                                <div class="input-group-text text-primary">
+                                                    <img src="/assets/images/icon/minng-power.png" alt="mining"
+                                                        width="42" height="42">
+                                                </div><output
+                                                    class="form-control fw-bold fs-4xl align-self-center">+<span
+                                                        class="power">2.889 TH/s</span></output>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="primary-bg calculator-body py-40 pt-0">
+                                    <h3 class="p-60 pb-0 fs-5xl fw-bold heading--dark-color">Mining rates over time</h3>
+                                    <ul class="list-group list-group-flush small">
+                                        <li class="gap-1 list-group-item hstack justify-content-between">
+                                            <span>Hour:</span><strong
+                                                class="gap-1 col-9 col-sm-6 col-lg-5 hstack justify-content-between"><span
+                                                    class="hourly">0.00000108 BTC</span><span
+                                                    class="hourlypc text-success">0.28%</span></strong>
+                                        </li>
+                                        <li class="gap-1 list-group-item hstack justify-content-between">
+                                            <span>Day:</span><strong
+                                                class="gap-1 col-9 col-sm-6 col-lg-5 hstack justify-content-between"><span
+                                                    class="daily">0.00002597 BTC</span><span
+                                                    class="hourlypc text-success">6.66%</span></strong>
+                                        </li>
+                                        <li class="gap-1 list-group-item hstack justify-content-between">
+                                            <span>Week:</span><strong
+                                                class="gap-1 col-9 col-sm-6 col-lg-5 hstack justify-content-between"><span
+                                                    class="weekly">0.00018176 BTC</span><span
+                                                    class="hourlypc text-success">46.60%</span></strong>
+                                        </li>
+                                        <li class="gap-1 list-group-item hstack justify-content-between">
+                                            <span>Month:</span><strong
+                                                class="gap-1 col-9 col-sm-6 col-lg-5 hstack justify-content-between"><span
+                                                    class="monthly">0.00077896 BTC</span><span
+                                                    class="hourlypc text-success">199.73%</span></strong>
+                                        </li>
+                                        <li class="gap-1 list-group-item hstack justify-content-between">
+                                            <span>Year:</span><strong
+                                                class="gap-1 col-9 col-sm-6 col-lg-5 hstack justify-content-between"><span
+                                                    class="yearly">0.00947736 BTC</span><span
+                                                    class="hourlypc text-success">2430.09%</span></strong>
+                                        </li>
+                                    </ul>
+                                    <div class="gap-1 calculator-footer hstack justify-content-between dark-blue-bg">
+                                        Estimated
+                                        Return on Investment: <strong class="roi text-primary text-nowrap">15
+                                            days</strong></div>
+                                </div>
+                            </div>
                         </div>
-                        <div id="tab-2" class="tab-content">
-                            <div class="dark-blue-bg p-24">
+                        <div id="tab-2" class="tab-content upgrade-miner-tab">
+                            <div class="dark-blue-bg p-24 pb-0 rounded-12">
                                 <div class="d-flex align-items-center">
                                     <span class="d-flex align-items-center">
                                         <a href="">
@@ -236,34 +317,632 @@
                                         </p>
                                     </span>
                                 </div>
+                                <div class="calculator-head py-40  rounded-18 rounded-tb-none">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3 class="fs-2xl fw-bold">Payment Amount:</h3>
+                                            <div class="input-group">
+                                                <label for="costs" class="input-group-text">
+                                                    <img src="/assets/images/icon/minng-cost.png" alt="mining"
+                                                        width="42" height="42">
 
-                                <ul class="d-flex feedback-box">
-                                    <li>
-                                        <img src="./assets/images/icon/start-box.svg" alt="" srcset="">
-                                    </li>
-                                    <li>
-                                        <p class="fs-2xl white-color">Your Feedback means a lot!</p>
-                                        <p class="fs-lg">Hey scrtrio, we hope you are happy with our service and enjoy
-                                            the Free 1.500 TH/s that we have credited to your account. We would be
-                                            delighted to receive a review from you!</p>
-                                        <div class="col-12 text-start rate-us-btn">
-                                            <a href="sign-up.html" target="_blank" class="btn btn-primary"> Please rate
-                                                us now!</a>
+                                                </label><input id="costs" class="price form-control h-70 me-3"
+                                                    type="number" value="0.00039000" autocomplete="off" min="24.02"
+                                                    step="1" max="215605.29">
+                                                <select class="flex-grow-0 form-select setcurrency d-inline-block"
+                                                    style="width: 6em">
+                                                    <option value="btc" selected="">BTC</option>
+                                                    <option value="usd">USD</option>
+                                                    <option value="eur">EUR</option>
+                                                    <option value="gbp">GBP</option>
+                                                    <option value="jpy">JPY</option>
+                                                    <option value="rub">RUB</option>
+                                                    <option value="inr">INR</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                    </li>
-                                </ul>
+                                        <div class="col-md-6">
+                                            <h3 class="fs-2xl fw-bold">Upgrade Amount:</h3>
+                                            <div class="input-group">
+                                                <div class="input-group-text text-primary">
+                                                    <img src="/assets/images/icon/minng-power.png" alt="mining"
+                                                        width="42" height="42">
+                                                </div><output
+                                                    class="form-control fw-bold fs-2xl align-self-center">+<span
+                                                        class="power">2.889 TH/s</span></output>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <section class="inner-tabbing py-40 pb-0">
+                                        <p class="mb-3 text-center fs-2xl fw-bold">Payment Amount:</p>
+                                        <div class="container-fluid">
+                                            <ul class="inner-tabs">
+                                                <li class="tab-link current inner-tabbing-btn " data-tab="inner-tab-1">
+                                                    Bitcoin
+                                                </li>
+                                                <li class="tab-link inner-tabbing-btn " data-tab="inner-tab-2"> Minings
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                            <div id="inner-tab-1" class="inner-tab-content current p-0 text-center">
+                                <div class="dark-blue-bg mt-60 p-40 rounded-12">
+                                    <p class="fs-2xl fw-bold">Pay via Bitcoin Send amount to deposit address below:</p>
+                                    <div class="deposite-address text-start dark-bg py-2 rounded-8">
+                                        <p class="fs-md fw-bold mb-2">Deposit address</p>
+                                        <p class="fs-base fw-normal">3H5SJeYKB5x4rqjU7CD9yL1YVGszzGbQjb</p>
+                                    </div>
+                                    <p class="fs-2xl fw-bold mt-3">Open via BTC App</p>
+                                    <img class="mt-40 qr-code-image" src="assets/images/common/QR-code.png" height="400"
+                                        width="400" alt="" srcset="">
+                                    <ul class="mt-4 qr-amount-box">
+                                        <li class="d-flex justify-content-between mb-3 align-items-center">
+                                            <span class="fs-2xl fw-normal white-color">Minimum amount:</span>
+                                            <span class="fs-2xl fw-normal white-color">0.00039000 BTC</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <span class="fs-2xl fw-normal white-color">Maximum amount:</span>
+                                            <span class="fs-2xl fw-normal white-color">3.50000000 BTC</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dark-blue-bg mt-60 p-40 rounded-12 text-start">
+                                    <ul class="d-flex">
+                                        <li>
+                                            <img src="./assets/images/icon/start-box.svg" alt="" srcset="">
+                                        </li>
+                                        <li class="ms-4">
+                                            <p class="fs-2xl white-color">Please note the following:</p>
+                                            <ul class="qr-warning-box ms-4">
+                                                <li class="white-color fw-normal fs-lg mb-2">Only deposit BTC via the
+                                                    Bitcoin network. Assets from other networks will otherwise be lost.
+                                                </li>
+                                                <li class="white-color fw-normal fs-lg mb-2">Transcations require at
+                                                    least 3 confirmations to be recognized by our system (ETA 45
+                                                    minutes)</li>
+                                                <li class="white-color fw-normal fs-lg mb-2">The transaction delay
+                                                    depends on the current Bitcoin network utilization and your set
+                                                    transaction fees. It cannot be controlled by MineThrive.</li>
+                                                <li class="white-color fw-normal fs-lg mb-2">Make sure you send the
+                                                    minimum amount (0.00039000 BTC) . Amounts that are too low will be
+                                                    lost.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mb-60 mt-40">
+                                    <a href="javascrip:void()" class="btn btn-primary modal-toggle"
+                                        data-target="PowerCalculator"> Power Calculator</a>
+                                </div>
+                                <div class="dark-blue-bg py-40 rounded-12">
+                                    <div class="mining-overview p-40 mt-0">
+                                        <p class="text-start fs-3xl fw-bold">Overview</p>
+                                        <ul class="mining-overview-ul">
+                                            <li class="d-flex justify-content-between">
+                                                <span class="fw-medium fs-xl">Purchased power:</span>
+                                                <span class="fw-bold fs-xl">+0.000 KH/s</span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span class="fw-medium fs-xl">Total costs:</span>
+                                                <span class="fw-bold fs-xl">0.00000000 BTC</span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span class="fw-medium fs-xl">Invitation commission:</span>
+                                                <span class="fw-bold fs-xl">+0.000 KH/s</span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span class="fw-medium fs-xl">Total Mining Rate:</span>
+                                                <span class="fw-bold fs-xl">1.500 TH/s</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="mt-60">
+                                        <p class="text-start fs-3xl fw-bold px-40 pb-4 mb-0">Upgrade history</p>
+                                        <div class="table-responsive">
+                                            <table class="table table-sm table-striped">
+                                                <tbody>
+                                                    <thead class="mb-2">
+                                                        <tr>
+                                                            <th>Date & Time</th>
+                                                            <th>Payment method</th>
+                                                            <th>Transaction</th>
+                                                            <th>Mining power</th>
+                                                            <th>Price</th>
+                                                            <th>Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <!-- <tr>
+                                                     <td class="formatunix">May 25, 2024, 01:31 AM</td>
+                                                    <td class="convertbtc">online</td>
+                                                    <td><a href="https://blockstream.info/tx/d212e64b8b4e0340ece2ce8c926ba03c7d0fd73ccf77c7127341704c0e4fa9b5"
+                                                            target="_blank"
+                                                            rel="noreferrer noopener">d212e64b8b4e0340ece2ce8c926ba03c7d0fd73ccf77c7127341704c0e4fa9b5</a>
+                                                    </td>
+                                                    <td>400</td>
+                                                    <td>10</td>
+                                                    <td>Online</td> 
+                                                </tr>-->
+                                                </tbody>
+                                            </table>
+                                            <p class="text-center fw-semibold fs-lg no-data-txt">No entries yets</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="inner-tab-2" class="inner-tab-content p-0">
+                                <div
+                                    class="d-flex align-items-center justify-content-between mining-tab-text p-24 pt-0 dark-blue-bg">
+                                    <span class="text-start fs-2xl fw-bold white-color">Invest your minings back into
+                                        more hardware power!</span>
+                                    <span>
+                                        <button class="btn btn-primary fs-md fw-bold"> Upgrade Now</button>
+                                    </span>
+                                </div>
+                                <div class="col-12 text-center mb-60 mt-40">
+                                    <a href="javascrip:void()" class="btn btn-primary modal-toggle"
+                                        data-target="PowerCalculator"> Power Calculator</a>
+                                </div>
+                                <div class="dark-blue-bg py-40 rounded-12">
+                                    <div class="mining-overview p-40 mt-0">
+                                        <p class="text-start fs-3xl fw-bold">Overview</p>
+                                        <ul class="mining-overview-ul">
+                                            <li class="d-flex justify-content-between">
+                                                <span class="fw-medium fs-xl">Purchased power:</span>
+                                                <span class="fw-bold fs-xl">+0.000 KH/s</span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span class="fw-medium fs-xl">Total costs:</span>
+                                                <span class="fw-bold fs-xl">0.00000000 BTC</span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span class="fw-medium fs-xl">Invitation commission:</span>
+                                                <span class="fw-bold fs-xl">+0.000 KH/s</span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span class="fw-medium fs-xl">Total Mining Rate:</span>
+                                                <span class="fw-bold fs-xl">1.500 TH/s</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="mt-60">
+                                        <p class="text-start fs-3xl fw-bold px-40 pb-4 mb-0">Upgrade history</p>
+                                        <div class="table-responsive">
+                                            <table class="table table-sm table-striped">
+                                                <tbody>
+                                                    <thead class="mb-2">
+                                                        <tr>
+                                                            <th>Date & Time</th>
+                                                            <th>Payment method</th>
+                                                            <th>Transaction</th>
+                                                            <th>Mining power</th>
+                                                            <th>Price</th>
+                                                            <th>Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <!-- <tr>
+                                                     <td class="formatunix">May 25, 2024, 01:31 AM</td>
+                                                    <td class="convertbtc">online</td>
+                                                    <td><a href="https://blockstream.info/tx/d212e64b8b4e0340ece2ce8c926ba03c7d0fd73ccf77c7127341704c0e4fa9b5"
+                                                            target="_blank"
+                                                            rel="noreferrer noopener">d212e64b8b4e0340ece2ce8c926ba03c7d0fd73ccf77c7127341704c0e4fa9b5</a>
+                                                    </td>
+                                                    <td>400</td>
+                                                    <td>10</td>
+                                                    <td>Online</td> 
+                                                </tr>-->
+                                                </tbody>
+                                            </table>
+                                            <p class="text-center fw-semibold fs-lg no-data-txt">No entries yets</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div id="tab-3" class="tab-content">
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.
+                        <div id="tab-3" class="tab-content Partnership">
+                            <div class="dark-blue-bg p-24 rounded-12">
+                                <div class="d-flex align-items-center">
+                                    <span class="d-flex align-items-center">
+                                        <a href="">
+                                            <img src="assets/images/icon/bars-solid.svg" height="25" width="25" alt=""
+                                                srcset="">
+                                        </a>
+                                        <p class="ms-3 fs-3xl fw-bold">
+                                            Partnership
+                                        </p>
+                                    </span>
+                                    <span class="ms-auto">
+                                        <p class="perchased-box">
+                                            Invitations: 0
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="feedback-box">
+                                    <ul class="qr-warning-box Partnership-box ms-4">
+                                        <li class="white-color fw-normal fs-lg mb-3">Commission only applies to
+                                            hashpower purchased by your invitees
+                                        </li>
+                                        <li class="white-color fw-normal fs-lg mb-3">Alternatively, you will receive
+                                            commission if your invitees also use our partner program</li>
+                                        <li class="white-color fw-normal fs-lg mb-3">Level 1: <span> +7% </span>
+                                            commission on direct invitations</li>
+                                        <li class="white-color fw-normal fs-lg mb-3">Level 2:<span> +2% </span> on
+                                            invitations from your invitees</li>
+                                        <li class="white-color fw-normal fs-lg">Level 3:<span> +1% </span>on further
+                                            subsequent invitations</li>
+                                    </ul>
+                                </div>
+                                <div class="calculator-head py-40  rounded-18 rounded-tb-none">
+                                    <div class="row">
+
+                                        <div class="col-md-6">
+                                            <h3 class="fs-2xl fw-bold">Invite via code:</h3>
+                                            <div class="input-group">
+                                                <div class="input-group-text text-primary">
+                                                    <output
+                                                        class="form-control fw-normal fs-2xl align-self-center"><span
+                                                            class="power">QgBXig3x</span></output>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="fs-2xl fw-bold">Invite via link:</h3>
+                                            <div class="input-group">
+                                                <div class="input-group-text text-primary">
+                                                    <output
+                                                        class="form-control fw-normal fs-2xl align-self-center"><span
+                                                            class="power">https://www.minethrive.co/?ref=QgBXig3x</span></output>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mining-overview mt-0">
+                                    <ul class="mining-overview-ul mt-0">
+                                        <li class="d-flex justify-content-between">
+                                            <span class="fw-medium fs-lg">Invitation commission:</span>
+                                            <span class="fw-bold fs-lg">+0.000 KH/s</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                            <span class="fw-medium fs-lg">Purchased power:</span>
+                                            <span class="fw-bold fs-lg">+0.000 KH/s</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                            <span class="fw-medium fs-lg">Total Mining Rate:</span>
+                                            <span class="fw-bold fs-lg">1.500 TH/s</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dark-blue-bg mt-60 py-40 rounded-12">
+                                <div class="p-24 pb-0">
+                                    <p class="text-start fs-4xl fw-bold">Advertising material & banners</p>
+                                    <h3 class="fs-2xl fw-bold">Invite via code:</h3>
+                                    <select name="Banner Select" id="Banner-select" class="banner-select">
+                                        <option value="option1">Wide Medium (468x60)</option>
+                                        <option value="option2">Wide Large (728x90)</option>
+                                        <option value="option3">Wide Medium (468x60)</option>
+                                        <option value="option4">Square Medium (300x250)</option>
+                                        <option value="option5">Square Small (200x200)</option>
+                                    </select>
+                                    <div class="col-12 text-center my-3 partnership-banner-box">
+                                        <img src="./assets/images/common/partnership-banner.png" alt="" srcset="">
+                                    </div>
+                                    <h3 class="fs-2xl fw-bold">Code</h3>
+                                    <textarea name="html-code"
+                                        class="cst-textarea cst-textarea-dark mb-2 fs-lg fw-normal" rows=4" id=""
+                                        readonly>HTML code for websites
+<a href="https://www.minethrive.co/?ref=QgBXig3x">
+<img src="https://www.minethrive.co/assets/images/banner/b2.gif"></a>
+                                </textarea>
+                                    <textarea name="html-code"
+                                        class="cst-textarea cst-textarea-dark mb-2 fs-lg fw-normal" rows=4" id=""
+                                        readonly>BBcode for forums
+[url=https://www.minethrive.co/?ref=QgBXig3x][img]https://www.minethrive.co/assets/images/banner/b2.gif[/img][/url]</textarea>
+                                    <textarea name="html-code"
+                                        class="cst-textarea cst-textarea-dark mb-2 fs-lg fw-normal" rows=2" id=""
+                                        readonly>Direct Banner Link
+https://www.minethrive.co/assets/images/banner/b2.gif</textarea>
+                                </div>
+                                <div class="mt-40">
+                                    <p class="text-start fs-3xl fw-bold px-40 pb-4 mb-0">Invitation history</p>
+                                    <div class="table-responsive">
+                                        <table class="table table-sm table-striped">
+                                            <tbody>
+                                                <thead class="mb-2">
+                                                    <tr>
+                                                        <th>Date & Time</th>
+                                                        <th>Referred user</th>
+                                                        <th>Active mining power</th>
+                                                        <th>Level / Bonus share</th>
+                                                        <th>Commission</th>
+                                                    </tr>
+                                                </thead>
+                                                <!-- <tr>
+                                                    <td class="formatunix">May 25, 2024, 01:31 AM</td>
+                                                    <td class="convertbtc">online</td>
+                                                    <td><a href="https://blockstream.info/tx/d212e64b8b4e0340ece2ce8c926ba03c7d0fd73ccf77c7127341704c0e4fa9b5"
+                                                            target="_blank"
+                                                            rel="noreferrer noopener">d212e64b8b4e0340ece2ce8c926ba03c7d0fd73ccf77c7127341704c0e4fa9b5</a>
+                                                    </td>
+                                                    <td>400</td>
+                                                    <td>10</td> 
+                                                </tr>-->
+                                            </tbody>
+                                        </table>
+                                        <p class="text-center fw-semibold fs-lg no-data-txt">No entries yets</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div id="tab-4" class="tab-content">
-                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea commodo consequat.
+                        <div id="tab-4" class="tab-content btc-Withdrawal">
+                            <div class="dark-blue-bg py-40 pt-0 rounded-12">
+                                <div class="p-24 pb-0">
+                                    <div class="d-flex align-items-center">
+                                        <span class="d-flex align-items-center">
+                                            <a href="">
+                                                <img src="assets/images/icon/bars-solid.svg" height="25" width="25"
+                                                    alt="" srcset="">
+                                            </a>
+                                            <p class="ms-3 fs-3xl fw-bold">
+                                                BTC Withdrawal
+                                            </p>
+                                        </span>
+                                        <span class="ms-auto">
+                                            <p class="perchased-box">
+                                                Total: 0.0000 BTC
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="calculator-head py-40 pb-0 rounded-18 rounded-tb-none">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h3 class="fs-2xl fw-bold">Withdrawal amount:</h3>
+                                                <div class="input-group">
+                                                    <label for="costs" class="input-group-text">
+                                                        <img src="/assets/images/icon/minng-cost.png" alt="mining"
+                                                            width="42" height="42">
+
+                                                    </label><input id="costs" class="price form-control h-70 me-3 fs-2xl fw-normal"
+                                                        type="number" value="0.00039000" autocomplete="off" min="24.02"
+                                                        step="1" max="215605.29">
+                                                    <select class="flex-grow-0 form-select setcurrency d-inline-block"
+                                                        style="width: 6em">
+                                                        <option value="btc" selected="">BTC</option>
+                                                        <option value="usd">USD</option>
+                                                        <option value="eur">EUR</option>
+                                                        <option value="gbp">GBP</option>
+                                                        <option value="jpy">JPY</option>
+                                                        <option value="rub">RUB</option>
+                                                        <option value="inr">INR</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h3 class="fs-2xl fw-bold">Bitcoin address:</h3>
+                                                <div class="input-group">
+                                                    <div class="input-group-text text-primary">
+                                                        <img src="/assets/images/icon/minng-power.png" alt="mining"
+                                                            width="42" height="42">
+                                                    </div><output
+                                                        class="form-control fw-normal fs-2xl align-self-center ">+<span
+                                                            class="power">Enter valid BTC address</span></output>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mining-overview p-40 px-0 mt-0 pb-0">
+                                            <ul class="mining-overview-ul mt-0">
+                                                <li class="d-flex justify-content-between">
+                                                    <span class="fw-medium fs-xl">Your Minings:</span>
+                                                    <span class="fw-bold fs-xl">0.00001739 BTC</span>
+                                                </li>
+                                                <li class="d-flex justify-content-between">
+                                                    <span class="fw-medium fs-xl">Minimum amount:</span>
+                                                    <span class="fw-bold fs-xl">0.00009700 BTC</span>
+                                                </li>
+                                                <li class="d-flex justify-content-between">
+                                                    <span class="fw-medium fs-xl">Maximum amount:</span>
+                                                    <span class="fw-bold fs-xl">0.00000000 BTC</span>
+                                                </li>
+                                                <li class="d-flex justify-content-between">
+                                                    <span class="fw-medium fs-xl">Transaction fees:</span>
+                                                    <span class="fw-bold fs-xl">0.00017000 BTC</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex justify-content-between align-items-center px-40 py-1 cst-textarea-dark">
+                                    <span class="fw-medium fs-xl white-color">Estimated Return on Investment:</span>
+                                    <span class="fw-bold fs-xl d-flex align-items-center white-color">
+                                        <span class="mx-3">0.00000000 BTC</span>
+                                        <button class="btn btn-primary">
+                                            Withdraw Minings
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="mt-40 p-40 dark-blue-bg rounded-12">
+                                <p class="fs-3xl white-color">Attention:</p>
+                                <p class="fs-lg white-color mb-1">We would like to remind you to check the correct input
+                                    of your BTC address. The withdrawal and transaction process is irreversible and
+                                    usually takes between 5 and 50 minutes.
+                                </p>
+                                <p class="fs-lg white-color">
+                                    Due to the current Mempool exhaustion the confirmation time of the broadcasted
+                                    transaction currently might take up to 12 hours
+                                </p>
+                            </div>
+                            <div class="mt-40 p-40 dark-blue-bg px-0 rounded-12">
+                                <p class="text-start fs-3xl fw-bold px-40 pb-4 mb-0">Invitation history</p>
+                                <div class="table-responsive">
+                                    <table class="table table-sm table-striped">
+                                        <tbody>
+                                            <thead class="mb-2">
+                                                <tr>
+                                                    <th>Date & Time</th>
+                                                    <th>Referred user</th>
+                                                    <th>Active mining power</th>
+                                                    <th>Level / Bonus share</th>
+                                                    <th>Commission</th>
+                                                </tr>
+                                            </thead>
+                                            <!-- <tr>
+                                                    <td class="formatunix">May 25, 2024, 01:31 AM</td>
+                                                    <td class="convertbtc">online</td>
+                                                    <td><a href="https://blockstream.info/tx/d212e64b8b4e0340ece2ce8c926ba03c7d0fd73ccf77c7127341704c0e4fa9b5"
+                                                            target="_blank"
+                                                            rel="noreferrer noopener">d212e64b8b4e0340ece2ce8c926ba03c7d0fd73ccf77c7127341704c0e4fa9b5</a>
+                                                    </td>
+                                                    <td>400</td>
+                                                    <td>10</td> 
+                                                </tr>-->
+                                        </tbody>
+                                    </table>
+                                    <p class="text-center fw-semibold fs-lg no-data-txt">No entries yets</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-content Preferences-tab">
+                            <div class="dark-blue-bg py-40 pt-0 rounded-12">
+                                <div class="p-24 pb-0">
+                                    <div class="d-flex align-items-center">
+                                        <span class="d-flex align-items-center">
+                                            <a href="">
+                                                <img src="assets/images/icon/bars-solid.svg" height="25" width="25"
+                                                    alt="" srcset="">
+                                            </a>
+                                            <p class="ms-3 fs-3xl fw-bold">
+                                                Preferences
+                                            </p>
+                                        </span>
+                                        <span class="ms-auto">
+                                            <p class="perchased-box">
+                                                Total: 0.0000 BTC
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="calculator-head py-40 pb-0 rounded-18 rounded-tb-none">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h3 class="fs-2xl fw-bold">Email Address:</h3>
+                                                <div class="input-group">
+                                                    <div class="input-group-text text-primary">
+                                                        <output
+                                                            class="form-control fw-normal fs-2xl align-self-center"><span
+                                                                class="power">fahab53092@exeneli.com</span></output>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h3 class="fs-2xl fw-bold">Current Password:</h3>
+                                                <div class="input-group">
+                                                    <div class="input-group-text text-primary">
+                                                        <output
+                                                            class="form-control fw-normal fs-2xl align-self-center"><span
+                                                                class="power">Current Password:</span></output>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mt-4">
+                                                <h3 class="fs-2xl fw-bold">New password:</h3>
+                                                <div class="input-group">
+                                                    <div class="input-group-text text-primary">
+                                                        <output
+                                                            class="form-control fw-normal fs-2xl align-self-center"><span
+                                                                class="power">New password</span></output>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mt-4">
+                                                <h3 class="fs-2xl fw-bold">Bitcoin Wallet:</h3>
+                                                <div class="input-group">
+                                                    <div class="input-group-text text-primary">
+                                                        <output
+                                                            class="form-control fw-normal fs-2xl align-self-center"><span
+                                                                class="power">https://www.minethrive.co/?ref=QgBXig3x</span></output>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center mt-40">
+                                            <button class="btn btn-primary fs-md fw-bold">
+                                                Update Account
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-40 p-40 px-0 dark-blue-bg rounded-12">
+                                <div class="p-24 py-0">
+                                    <p class="text-start fs-2xl fw-bold">
+                                        Multi-factor authentication
+                                    </p>
+                                    <span class="fs-lg fw-normal white-color"> Please install and use a 2FA app from the
+                                        app store of your choice.
+                                        <a href="#" class="authentication-link fw-bold">
+                                            Learn more
+                                        </a>
+                                    </span>
+                                </div>
+                                <div
+                                    class="d-flex justify-content-between align-items-center p-24 mt-3 px-40 cst-gradian-bg">
+                                    <span class="fw-semibold fs-lg white-color">Status:</span>
+                                    <span class="fw-bold fs-xl d-flex align-items-center white-color">
+                                        <span class="">
+                                            <img src="./assets/images/icon/warning.svg" alt="" srcset="">
+                                        </span>
+                                        <span class="fw-normal fs-lg mx-2 text-red">Disabled</span>
+                                    </span>
+                                </div>
+                                <div class="px-24 py-40 pb-0">
+                                    <p class="text-start fs-2xl fw-bold">
+                                        Add the secret to your app
+                                    </p>
+                                    <p class="text-start fs-lg fw-normal">
+                                        <span class="fw-bold">Method 1:</span> Scan the QR code with your smartphone
+                                    </p>
+                                    <img class="mt-40 mb-40 qr-code-image" src="assets/images/common/QR-code.png"
+                                        height="150" width="150" alt="" srcset="">
+                                    <p class="text-start fs-lg fw-normal">
+                                        <span class="fw-bold">Method 2:</span> Enter the secret manually into your 2FA
+                                        app
+                                    </p>
+                                    <p class="text-start fs-2xl mb-2 fw-bold">
+                                        Secret:
+                                    </p>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center px-40 py-2 cst-textarea-dark rounded-8">
+                                        <input type="text" class="transparent-input fw-medium fs-lg white-color"
+                                            value="52HJR23MT7TSTHKBUDQRQUTXO5TFWQYY" readonly>
+                                        <span class="fw-bold fs-md d-flex align-items-center white-color">
+                                            <button class="btn btn-primary py-3">
+                                                Open 2FA App
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <p class="text-start fs-2xl mb-3 fw-bold mt-40">
+                                        Enter code from your app 
+                                    </p>
+                                    <p class="text-start fs-lg mb-2 fw-bold">
+                                        Confirm by entering a 6-digit one-time code from your 2FA app
+                                    </p>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center px-40 py-2 cst-textarea-dark rounded-8">
+                                        <input type="text" class="transparent-input fw-medium fs-lg white-color"
+                                            value="123456">
+                                        <span class="fw-bold fs-md d-flex align-items-center white-color">
+                                            <button class="btn btn-primary py-3">
+                                                Enable Protection
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

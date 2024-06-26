@@ -131,14 +131,15 @@ tbody tr:nth-child(odd) {
 table a {
     color: var(--blue-color-200);
     text-decoration: underline;
-}
-/* hardware-mining-power */
-.calculator-body,
-.calculator-content {
-    background: var(--primary-dark-color);
-    /* background:var(--primary-color); */
-}
-.hardware-mining-power {
+  }
+
+  /* hardware-mining-power */
+  .calculator-body,
+  .calculator-content {
+background:var(--primary-dark-color);
+/* background:var(--primary-color); */
+  }
+  .hardware-mining-power-bg  {
     background: url(../images/home/hardware-mining-power.png) no-repeat center/ cover;
 }
 .calculator-head input,
@@ -162,13 +163,13 @@ table a {
     width: 5.2em !important;
     align-self: center;
     padding: 10px;
-    border-radius: 6px !important;
-    -webkit-border-radius: 6px !important;
-    -moz-border-radius: 6px !important;
-    -ms-border-radius: 6px !important;
-    -o-border-radius: 6px !important;
-    font-weight: 500;
-    font-size: var(--fs-2xl);
+    border-radius: 8px !important;
+    -webkit-border-radius: 8px !important;
+    -moz-border-radius: 8px !important;
+    -ms-border-radius: 8px !important;
+    -o-border-radius: 8px !important;
+    font-weight:500;
+    font-size: var( --fs-2xl);
 }
 .calculator-head select option {
     font-size: var(--fs-2xl);
