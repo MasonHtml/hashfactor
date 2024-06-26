@@ -2,7 +2,6 @@ footer {
     background: rgb(180,198,255);
     background: linear-gradient(33deg, rgba(40,33,140,1) 0%, rgba(9,13,92,1) 100%);
 }
-
 .nav-footer-item a::before {
     content: "";
     width: 6px;
@@ -14,11 +13,9 @@ footer {
     margin-right: 10px;
 }
 .nav-footer-item a {
-
     color: var(--white-color);
     font-size: var(--fs-xl);
     position: relative;
-
 }
 .footer-item  img{
     width: min(80%, 417px);
@@ -30,7 +27,6 @@ footer {
     flex-wrap: wrap;
     gap:clamp(12px, 2px + 1.5vw, 26px) clamp(12px, 2px + 1.5vw, 30px);
 }
-
 #scrollToTopBtn {
     position: fixed;
     bottom: 50px;
@@ -42,14 +38,13 @@ footer {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: clamp(45px, 8px + 3.8vw, 70px);
+    width: clamp(45px, 0px + 3.8vw, 70px);
 aspect-ratio: 1/1;
     border-radius: 100px;
 }
 #scrollToTopBtn img{
     filter: invert(1);
 }
-
 @media (max-width:576px){
     .footer-item img {
         width: min(50%, 417px);

@@ -202,3 +202,4 @@ copyText.querySelector("button").addEventListener("click", function () {
 	}, 2500);
 });
 }, 1000)
+
