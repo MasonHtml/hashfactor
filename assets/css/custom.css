@@ -1,7 +1,4 @@
-:root {
-    /*-------------colors---------- */
-    --dark-blue:#051139;
-}
+
 .dark-blue-color{
     color: var(--dark-blue);
 }
@@ -324,6 +321,8 @@ font-weight: 600;
     background-size: 45px;
     background-position: 99% 12px;
     background-image: url(../images/icon/chevron-down-white.svg);
+    background-repeat: no-repeat;
+    appearance: none;
 }
 .partnership-banner-box img{
     width: auto;
@@ -365,4 +364,8 @@ font-weight: 600;
 }
 .transparent-input:focus{
     border: none;
+}
+.tabbing-pages .calculator-head input,.tabbing-pages  .calculator-head .input-group-text,.tabbing-pages  .calculator-head .input-group{
+    font-size: var(--fs-2xl);
+    font-weight: 700 !important;
 }

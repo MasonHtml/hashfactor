@@ -1,93 +1,60 @@
-setTimeout(function() { $(function() {
+setTimeout(() => {
+   const navbarMenu = document.getElementById("menu");
+   const burgerMenu = document.getElementById("burger");
+   const overlayMenu = document.querySelector(".overlay");
 
-  var siteSticky = function() {
-		$(".js-sticky-header").sticky({topSpacing:0});
-	};
-	siteSticky();
-
-	var siteMenuClone = function() {
-
-		$('.js-clone-nav').each(function() {
-			var $this = $(this);
-			$this.clone().attr('class', 'site-nav-wrap').appendTo('.site-mobile-menu-body');
-		});
-
-
-		setTimeout(function() {
-			
-			var counter = 0;
-      $('.site-mobile-menu .has-children').each(function(){
-        var $this = $(this);
-        
-        $this.prepend('<span class="arrow-collapse collapsed">');
-
-        $this.find('.arrow-collapse').attr({
-          'data-toggle' : 'collapse',
-          'data-target' : '#collapseItem' + counter,
-        });
-
-        $this.find('> ul').attr({
-          'class' : 'collapse',
-          'id' : 'collapseItem' + counter,
-        });
-
-        counter++;
-
+   // Check if burgerMenu and navbarMenu exist before adding event listener
+   if (burgerMenu && navbarMenu) {
+      burgerMenu.addEventListener("click", () => {
+         burgerMenu.classList.toggle("is-active");
+         navbarMenu.classList.toggle("is-active");
+         document.body.classList.toggle("overflow-hidden"); // Selecting document.body directly
       });
+   }
 
-    }, 1000);
+   // Close Navbar Menu on Click Links
+   document.querySelectorAll(".menu-link").forEach((link) => {
+      link.addEventListener("click", () => {
+         // Ensure burgerMenu and navbarMenu are defined before accessing them
+         if (burgerMenu && navbarMenu) {
+            burgerMenu.classList.remove("is-active");
+            navbarMenu.classList.remove("is-active");
+            document.body.classList.remove("overflow-hidden"); // Selecting document.body directly
+         }
+      });
+   });
 
-		$('body').on('click', '.arrow-collapse', function(e) {
-      var $this = $(this);
-      if ( $this.closest('li').find('.collapse').hasClass('show') ) {
-        $this.removeClass('active');
-      } else {
-        $this.addClass('active');
+   // Fixed Navbar Menu on Window Resize
+   window.addEventListener("resize", () => {
+      if (navbarMenu && overlayMenu && window.innerWidth >= 992) {
+         if (navbarMenu.classList.contains("is-active")) {
+            navbarMenu.classList.remove("is-active");
+            overlayMenu.classList.remove("is-active");
+            document.body.classList.remove("overflow-hidden"); // Selecting document.body directly
+         }
       }
-      e.preventDefault();  
-      
-    });
+   });
 
-		$(window).resize(function() {
-			var $this = $(this),
-				w = $this.width();
+   // Dark and Light Mode on Switch Click
+   if (darkSwitch) {
+      darkSwitch.addEventListener("click", () => {
+         document.documentElement.classList.toggle("darkmode");
+         document.body.classList.toggle("darkmode");
+      });
+   }
 
-			if ( w > 768 ) {
-				if ( $('body').hasClass('offcanvas-menu') ) {
-					$('body').removeClass('offcanvas-menu');
-				}
-			}
-		})
 
-		$('body').on('click', '.js-menu-toggle', function(e) {
-			var $this = $(this);
-			e.preventDefault();
 
-			if ( $('body').hasClass('offcanvas-menu') ) {
-				$('body').removeClass('offcanvas-menu');
-				$this.removeClass('active');
-			} else {
-				$('body').addClass('offcanvas-menu');
-				$this.addClass('active');
-			}
-		}) 
-
-		// click outisde offcanvas
-		$(document).mouseup(function(e) {
-	    var container = $(".site-mobile-menu");
-	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-	      if ( $('body').hasClass('offcanvas-menu') ) {
-					$('body').removeClass('offcanvas-menu');
-				}
-	    }
-		});
-	}; 
-	siteMenuClone();
-});}, 2000);
-
-setTimeout(function() {
-// document.addEventListener("DOMContentLoaded", function() {
-  var year = new Date();
-  document.getElementById("currentYear").innerHTML = year.getFullYear();
-// });
 }, 2000);
+
+   // Using plain JavaScript
+   window.addEventListener('scroll', function() {
+      var header = document.getElementById('header');
+      if (window.scrollY > 0) {
+          header.classList.add('sticky');
+      } else {
+          header.classList.remove('sticky');
+      }
+   });
+
+
