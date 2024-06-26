@@ -143,7 +143,7 @@ ul.plan-description{
 background:var(--primary-dark-color);
 /* background:var(--primary-color); */
   }
-  .hardware-mining-power {
+  .hardware-mining-power-bg  {
     background: url(../images/home/hardware-mining-power.png) no-repeat center/ cover;
   }
 
@@ -165,11 +165,11 @@ background:var(--primary-dark-color);
     width: 5.2em !important;
     align-self: center;
     padding: 10px;
-    border-radius: 6px !important;
-    -webkit-border-radius: 6px !important;
-    -moz-border-radius: 6px !important;
-    -ms-border-radius: 6px !important;
-    -o-border-radius: 6px !important;
+    border-radius: 8px !important;
+    -webkit-border-radius: 8px !important;
+    -moz-border-radius: 8px !important;
+    -ms-border-radius: 8px !important;
+    -o-border-radius: 8px !important;
     font-weight:500;
     font-size: var( --fs-2xl);
 }
@@ -212,7 +212,7 @@ span.hourlypc.text-success {
 }
 
 .calculator-footer  {
-    background:var(--primary--coloR);
+    background:var(--primary-dark-color);
     font-weight: 500;
     font-size: var(--fs-lg);
     color: var(--heading--dark-color);
