@@ -203,3 +203,30 @@ copyText.querySelector("button").addEventListener("click", function () {
 });
 }, 1000)
 
+
+
+setTimeout(() => {
+  var currentUrl = window.location.pathname;
+  
+  // Get all the links in the navigation menu
+  let menuLinks = document.querySelectorAll('nav a');
+  
+  // Loop through each link
+  menuLinks.forEach(function(link) {
+    var linkUrl = link.pathname; // Get the path part of the href
+    
+    // Check if the link URL matches the current page URL
+    if (currentUrl === linkUrl) {
+      // Add 'active' class to the link itself
+      link.classList.add('active');
+    }
+  });
+
+}, 1000);
+
+ setTimeout(() => {
+        const checkbox = document.getElementById("checkbox")
+    checkbox.addEventListener("change", () => {
+      document.body.classList.toggle("dark")
+    })
+  }, 1000);

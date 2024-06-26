@@ -1,3 +1,14 @@
+  // Using plain JavaScript
+  window.addEventListener('scroll', function() {
+   var header = document.getElementById('header');
+   if (window.scrollY > 0) {
+       header.classList.add('sticky');
+   } else {
+       header.classList.remove('sticky');
+   }
+});
+
+
 setTimeout(() => {
    const navbarMenu = document.getElementById("menu");
    const burgerMenu = document.getElementById("burger");
@@ -34,27 +45,7 @@ setTimeout(() => {
          }
       }
    });
-
-   // Dark and Light Mode on Switch Click
-   if (darkSwitch) {
-      darkSwitch.addEventListener("click", () => {
-         document.documentElement.classList.toggle("darkmode");
-         document.body.classList.toggle("darkmode");
-      });
-   }
-
-
-
 }, 2000);
 
-   // Using plain JavaScript
-   window.addEventListener('scroll', function() {
-      var header = document.getElementById('header');
-      if (window.scrollY > 0) {
-          header.classList.add('sticky');
-      } else {
-          header.classList.remove('sticky');
-      }
-   });
-
+ 
 
