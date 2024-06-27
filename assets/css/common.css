@@ -58,7 +58,7 @@
   text-rendering: optimizeLegibility;
   font-family: "Inter", sans-serif;
 }
-.body,html{
+body,html{
   background: var( --body-bg);
 }
 /*---------------- font size css ------------------------- */

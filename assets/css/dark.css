@@ -1,6 +1,20 @@
-.body.light,
+body.light,
 html .light {
   background: var(--white-color);
+  background: #D0DFFF;
+  background: #EDF2FE;
+}
+.light  .dark-blue-bg , .light .gradient-border .feature-card  {
+  background: #BDD1FF;
+}
+.light .tabbing-pages .blue-color-400, .light .left-sidebar .account-tabs li, .light .copy-text , .light .gradient {
+  background: #87A5EF;
+}
+.light .tabbing-pages .dark-color *{
+  color: var(--heading--dark-color);
+}
+.light .feature-card{
+  box-shadow: none;
 }
 .light :where(.dark-color) .section-title,
 .light :where(.dark-color) p,
@@ -8,8 +22,7 @@ html .light {
 .light :where(.dark-color) h2,
 .light :where(.dark-color) h3,
 .light :where(.dark-color) a,
-.light .dark-color .mining-overview *,
-.light .calculator-head
+.light .dark-color .mining-overview *
  {
   color: var(--heading--dark-color);
 }
