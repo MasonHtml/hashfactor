@@ -49,6 +49,7 @@ ul.tabs{
     display: flex;
     flex-direction: column;
     border-radius: 12px;
+    transition: all 0.3s ease-in-out;
 }
 .profile-box {
     padding: clamp(15px, 5px + 1.05vw, 24px);
@@ -59,7 +60,7 @@ ul.tabs{
     border-radius: 50%;
 }
 .mining-rate{
-    padding: clamp(12px, 1.4vw, 16px) clamp(15px, 5px + 1.05vw, 24px);
+    padding: clamp(12px, 1vw, 16px) clamp(15px, 5px + 1.05vw, 24px);
     border-radius: 14px;
 }
 .profile-content {
@@ -87,7 +88,7 @@ ul.tabs{
 	background: transparent;
 }
 .copy-text button {
-	padding: 12px clamp(20px, 9px + 1.7273vw, 30px);
+	padding: 12px clamp(10px, 0px + 1.5273vw, 30px);
 	background: #0A257E;
 	color: #fff;
 	font-size: clamp(14px, 5.4176px + 0.7818vw, 18px);
@@ -150,12 +151,13 @@ ul.tabs{
     border-radius: 10px;
     color: var(--white-color);
     font-size: clamp(14px, 5.4176px + 0.7818vw, 18px);
-    padding: clamp(14px, 5.4176px + 0.7818vw, 17px) clamp(15px, 5px + 1.05vw, 24px);
+    padding: clamp(14px, 2px + 0.7818vw, 17px) clamp(15px, 5px + 1.05vw, 24px);
     background-color: var(--neon-color);
     font-weight: 700;
 }
 .right-side {
     width: calc(100% - 460px);
+    transition: all 0.2s ease-in-out;
 }
 .mining-overview{
     margin-top: clamp(20px, 9px + 1.7273vw, 40px);
@@ -182,7 +184,7 @@ padding: clamp(15px, 5px + 1.05vw, 24px);
 border-radius: 12px;
 }
 .main-tabs .tab-content {
-    padding: 0 clamp(20px, 9px + 1.7273vw, 40px);
+    padding: 0 clamp(20px, 7px + 1.7273vw, 40px);
 }
 .feedback-box{
     margin-top: clamp(20px, 9px + 1.7273vw, 40px);
@@ -228,7 +230,7 @@ border-radius: 12px;
     border-radius: clamp(5px, .8vw, 8px);
     transition: 0.3s;
     cursor: pointer;
-    padding-block: clamp(12px, 2.5px + .81vw, 18px);
+    padding-block: clamp(11px, 2px + 0.61vw, 18px);
     padding-inline: clamp(1.125rem, 0.9068rem + 1.0909vw, 1.875rem);
     --_button-hover: var(--hover, var(--primary-color));
     --_button-hover-text: var(--hover-text, var(--white-color));
@@ -368,4 +370,60 @@ font-weight: 600;
 .tabbing-pages .calculator-head input,.tabbing-pages  .calculator-head .input-group-text,.tabbing-pages  .calculator-head .input-group{
     font-size: var(--fs-2xl);
     font-weight: 700 !important;
+}
+.tabbing-pages.fullview .left-sidebar {
+    width: 0;
+    opacity: 0;
+    z-index: -1;
+}
+.tabbing-pages.fullview .right-side {
+    width: 100%;
+}
+.fullview-toogle{
+    cursor: pointer;
+}
+.feedback-box img{
+height: auto;
+min-width: 30px;
+}
+.border-none, .border-none > * {
+    border: none !important;
+}
+.tabbing-pages output {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    text-align: left;
+}
+
+.tabbing-pages .input-group {
+    max-width: 100%;
+}
+.tabbing-pages .input-group-text {
+    max-width: 100%;
+}
+.tabbing-pages .btn{
+    border: none;
+}
+.tabbing-pages p {
+    text-wrap: pretty;
+} 
+
+@media screen and (max-width: 1024px) {
+    .left-sidebar {
+        width: 360px;
+    }
+    .right-side {
+        width: calc(100% - 360px);
+    }
+}
+@media screen and (max-width: 991px) {
+    .left-sidebar {
+        width: 300px;
+    }
+    .right-side {
+        width: calc(100% - 300px);
+    }
 }
