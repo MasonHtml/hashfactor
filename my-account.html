@@ -23,7 +23,7 @@
     <!-- header end -->
     <section class="tabbing-pages" id="main-tabbing-pages">
         <div class="container-fluid">
-            <div class="d-flex flex-row">
+            <div class="d-flex flex-row tabbing-main-row justify-content-between">
                 <div class="left-sidebar dark-blue-bg">
                     <div class="profile-box d-flex flex-row align-items-center">
                         <img src="assets/images/common/profile.png" alt="" srcset="">
@@ -112,7 +112,7 @@
                                         <img src="assets/images/icon/bars-solid.svg" height="25" width="25" alt=""
                                             srcset="">
                                     </span>
-                                    <p class="ms-3 fs-3xl fw-bold">
+                                    <p class="ms-md-3 ms-0 fs-3xl fw-bold">
                                         My Account
                                     </p>
                                 </div>
@@ -122,8 +122,8 @@
                                     </p>
                                 </div>
                                 <ul class="d-flex feedback-box">
-                                    <li>
-                                        <img src="./assets/images/icon/start-box.svg" width="37" height="39" alt="" srcset="">
+                                    <li class="d-none d-sm-block">
+                                        <img src="./assets/images/icon/start-box.svg" class="star-image" width="37" height="39" alt="" srcset="">
                                     </li>
                                     <li>
                                         <p class="fs-2xl white-color">Your Feedback means a lot!</p>
@@ -138,7 +138,7 @@
                                 </ul>
                             </div>
                             <section class="gradient-border py-60">
-                                <div class="row gy-md-4 gy-3">
+                                <div class="row gy-lg-4 gy-3">
                                     <div class="col-md-6 col-xl-4">
                                         <div class="feature-card feature-card-icon rounded-16 gap-2  feature-card-ring">
                                             <div class="feature-content ">
@@ -149,7 +149,7 @@
                                                         time, even with mined balance! Increase your earnings by
                                                         maximizing your hashrate.</p>
                                                 </div>
-                                                <span class="col-12 text-center d-block">
+                                                <span class="col-12 text-md-center text-start d-block">
                                                     <a href="sign-up.html" target="_blank"
                                                         class="btn btn-primary rate-us-btn fw-bold"> Upgrade Now</a>
                                                 </span>
@@ -168,7 +168,7 @@
                                                         Create your Network
                                                     </p>
                                                 </div>
-                                                <span class="col-12 text-center d-block">
+                                                <span class="col-12 text-md-center text-start d-block">
                                                     <a href="sign-up.html" target="_blank"
                                                         class="btn btn-primary rate-us-btn fw-bold"> Upgrade Now</a>
                                                 </span>
@@ -185,7 +185,7 @@
                                                         with two-factor authentication, change your settings or
                                                         configure your Bitcoin payout address.</p>
                                                 </div>
-                                                <span class="col-12 text-center d-block">
+                                                <span class="col-12 text-md-center text-start d-block">
                                                     <a href="sign-up.html" target="_blank"
                                                         class="btn btn-primary rate-us-btn fw-bold"> Upgrade Now</a>
                                                 </span>
@@ -220,8 +220,8 @@
                             <div class="calculator-content rounded-18 hardware-mining-power">
                                 <p class="text-start fs-3xl fw-bold py-40 pt-0 mb-0">Mining Power Calculator</p>
                                 <div class="calculator-head gradient p-60 py-40  rounded-18 rounded-tb-none">
-                                    <div class="row align-items-end">
-                                        <div class="col-md-6">
+                                    <div class="row align-items-end gy-3">
+                                        <div class="col-lg-6">
                                             <h3 class="fs-5xl fw-bold">Mining Hardware Costs:</h3>
                                             <div class="input-group">
                                                 <label for="costs" class="input-group-text">
@@ -243,7 +243,7 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6">
                                             <h3 class="fs-5xl fw-bold">Mining Power:</h3>
                                             <div class="input-group">
                                                 <div class="input-group-text text-primary">
@@ -301,25 +301,25 @@
                         </div>
                         <div id="tab-2" class="tab-content upgrade-miner-tab">
                             <div class="dark-blue-bg p-24 pb-0 rounded-12">
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center mobile-flex">
                                     <span class="d-flex align-items-center">
                                         <span class="fullview-toogle" onclick="fullview()">
                                             <img src="assets/images/icon/bars-solid.svg" height="25" width="25" alt=""
                                                 srcset="">
                                         </span>
-                                        <p class="ms-3 fs-3xl fw-bold">
+                                        <p class="ms-md-3 ms-0 fs-3xl fw-bold">
                                             Upgrade Miner
                                         </p>
                                     </span>
-                                    <span class="ms-auto">
+                                    <span class="ms-sm-auto">
                                         <p class="perchased-box">
                                             Purchased: 0.000 KH/s
                                         </p>
                                     </span>
                                 </div>
                                 <div class="calculator-head py-40  rounded-18 rounded-tb-none">
-                                    <div class="row">
-                                        <div class="col-md-6">
+                                    <div class="row gy-3">
+                                        <div class="col-lg-6">
                                             <h3 class="fs-2xl fw-bold">Payment Amount:</h3>
                                             <div class="input-group">
                                                 <label for="costs" class="input-group-text">
@@ -341,7 +341,7 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6">
                                             <h3 class="fs-2xl fw-bold">Upgrade Amount:</h3>
                                             <div class="input-group">
                                                 <div class="input-group-text text-primary">
@@ -368,9 +368,9 @@
                                 </div>
                             </div>
                             <div id="inner-tab-1" class="inner-tab-content current p-0 text-center">
-                                <div class="dark-blue-bg mt-60 p-40 rounded-12">
+                                <div class="dark-blue-bg mt-60 p-40 rounded-12 ">
                                     <p class="fs-2xl fw-bold">Pay via Bitcoin Send amount to deposit address below:</p>
-                                    <div class="deposite-address text-start dark-bg py-2 rounded-8">
+                                    <div class="deposite-address text-start dark-bg py-2 rounded-8 dark-color">
                                         <p class="fs-md fw-bold mb-2">Deposit address</p>
                                         <p class="fs-base fw-normal">3H5SJeYKB5x4rqjU7CD9yL1YVGszzGbQjb</p>
                                     </div>
@@ -390,10 +390,10 @@
                                 </div>
                                 <div class="dark-blue-bg mt-60 p-40 rounded-12 text-start">
                                     <ul class="d-flex">
-                                        <li>
-                                            <img src="./assets/images/icon/start-box.svg" alt="" srcset="">
+                                        <li class="d-none d-sm-block">
+                                            <img src="./assets/images/icon/start-box.svg" class="star-image" alt="" srcset="">
                                         </li>
-                                        <li class="ms-4">
+                                        <li class="ms-0 ms-sm-4 ">
                                             <p class="fs-2xl white-color">Please note the following:</p>
                                             <ul class="qr-warning-box ms-4">
                                                 <li class="white-color fw-normal fs-lg mb-2">Only deposit BTC via the
@@ -413,10 +413,10 @@
                                     </ul>
                                 </div>
                                 <div class="col-12 text-center mb-60 mt-40">
-                                    <a href="javascrip:void()" class="btn btn-primary modal-toggle"
+                                    <a href="javascrip:void()" class="btn mt-3 mt-md-0 btn-primary modal-toggle"
                                         data-target="PowerCalculator"> Power Calculator</a>
                                 </div>
-                                <div class="dark-blue-bg py-40 rounded-12">
+                                <div class="dark-blue-bg py-40 mt-3 rounded-12">
                                     <div class="mining-overview p-40 mt-0">
                                         <p class="text-start fs-3xl fw-bold">Overview</p>
                                         <ul class="mining-overview-ul">
@@ -482,7 +482,7 @@
                                     </span>
                                 </div>
                                 <div class="col-12 text-center mb-60 mt-40">
-                                    <a href="javascrip:void()" class="btn btn-primary modal-toggle"
+                                    <a href="javascrip:void()" class="btn mt-3 mt-md-0 btn-primary modal-toggle"
                                         data-target="PowerCalculator"> Power Calculator</a>
                                 </div>
                                 <div class="dark-blue-bg py-40 rounded-12">
@@ -544,17 +544,17 @@
                         </div>
                         <div id="tab-3" class="tab-content Partnership">
                             <div class="dark-blue-bg p-24 rounded-12">
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center mobile-flex">
                                     <span class="d-flex align-items-center">
                                         <span class="fullview-toogle" onclick="fullview()">
                                             <img src="assets/images/icon/bars-solid.svg" height="25" width="25" alt=""
                                                 srcset="">
                                         </span>
-                                        <p class="ms-3 fs-3xl fw-bold">
+                                        <p class="ms-md-3 ms-0 fs-3xl fw-bold">
                                             Partnership
                                         </p>
                                     </span>
-                                    <span class="ms-auto">
+                                    <span class="ms-sm-auto">
                                         <p class="perchased-box">
                                             Invitations: 0
                                         </p>
@@ -576,9 +576,8 @@
                                     </ul>
                                 </div>
                                 <div class="calculator-head py-40  rounded-18 rounded-tb-none">
-                                    <div class="row">
-
-                                        <div class="col-md-6">
+                                    <div class="row gy-3 ">
+                                        <div class="col-lg-6">
                                             <h3 class="fs-2xl fw-bold">Invite via code:</h3>
                                             <div class="input-group">
                                                 <div class="input-group-text text-primary">
@@ -588,7 +587,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6">
                                             <h3 class="fs-2xl fw-bold">Invite via link:</h3>
                                             <div class="input-group">
                                                 <div class="input-group-text text-primary">
@@ -681,25 +680,25 @@ https://www.minethrive.co/assets/images/banner/b2.gif</textarea>
                         <div id="tab-4" class="tab-content btc-Withdrawal">
                             <div class="dark-blue-bg py-40 pt-0 rounded-12">
                                 <div class="p-24 pb-0">
-                                    <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center mobile-flex">
                                         <span class="d-flex align-items-center">
                                             <span class="fullview-toogle" onclick="fullview()">
                                                 <img src="assets/images/icon/bars-solid.svg" height="25" width="25" alt=""
                                                     srcset="">
                                             </span>
-                                            <p class="ms-3 fs-3xl fw-bold">
+                                            <p class="ms-md-3 ms-0 fs-3xl fw-bold">
                                                 BTC Withdrawal
                                             </p>
                                         </span>
-                                        <span class="ms-auto">
+                                        <span class="ms-sm-auto">
                                             <p class="perchased-box">
                                                 Total: 0.0000 BTC
                                             </p>
                                         </span>
                                     </div>
                                     <div class="calculator-head py-40 pb-0 rounded-18 rounded-tb-none">
-                                        <div class="row">
-                                            <div class="col-md-6">
+                                        <div class="row gy-3">
+                                            <div class="col-lg-6">
                                                 <h3 class="fs-2xl fw-bold">Withdrawal amount:</h3>
                                                 <div class="input-group">
                                                     <label for="costs" class="input-group-text">
@@ -721,7 +720,7 @@ https://www.minethrive.co/assets/images/banner/b2.gif</textarea>
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-lg-6">
                                                 <h3 class="fs-2xl fw-bold">Bitcoin address:</h3>
                                                 <div class="input-group">
                                                     <div class="input-group-text text-primary">
@@ -756,10 +755,10 @@ https://www.minethrive.co/assets/images/banner/b2.gif</textarea>
                                     </div>
                                 </div>
                                 <div
-                                    class="d-flex justify-content-between align-items-center px-40 py-1 cst-textarea-dark">
-                                    <span class="fw-medium fs-xl white-color">Estimated Return on Investment:</span>
-                                    <span class="fw-bold fs-xl d-flex align-items-center white-color">
-                                        <span class="mx-3">0.00000000 BTC</span>
+                                    class="d-flex justify-content-between align-items-center px-40 py-1 cst-textarea-dark withdraw-mining">
+                                    <span class="fw-medium fs-xl white-color withdraw-mining-span mb-sm-0 mb-3">Estimated Return on Investment:</span>
+                                    <span class="fw-bold fs-xl d-flex align-items-center white-color withdraw-mining-span">
+                                        <span class="mx-sm-3 mx-0">0.00000000 BTC</span>
                                         <button class="btn btn-primary">
                                             Withdraw Minings
                                         </button>
@@ -816,7 +815,7 @@ https://www.minethrive.co/assets/images/banner/b2.gif</textarea>
                                                 <img src="assets/images/icon/bars-solid.svg" height="25" width="25" alt=""
                                                     srcset="">
                                             </span>
-                                            <p class="ms-3 fs-3xl fw-bold">
+                                            <p class="ms-md-3 ms-0 fs-3xl fw-bold">
                                                 Preferences
                                             </p>
                                         </span>
@@ -827,8 +826,8 @@ https://www.minethrive.co/assets/images/banner/b2.gif</textarea>
                                         </span>
                                     </div>
                                     <div class="calculator-head py-40 pb-0 rounded-18 rounded-tb-none">
-                                        <div class="row">
-                                            <div class="col-md-6">
+                                        <div class="row gy-3">
+                                            <div class="col-lg-6">
                                                 <h3 class="fs-2xl fw-bold">Email Address:</h3>
                                                 <div class="input-group">
                                                     <div class="input-group-text text-primary">
@@ -838,7 +837,7 @@ https://www.minethrive.co/assets/images/banner/b2.gif</textarea>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-lg-6">
                                                 <h3 class="fs-2xl fw-bold">Current Password:</h3>
                                                 <div class="input-group">
                                                     <div class="input-group-text text-primary">
@@ -848,7 +847,7 @@ https://www.minethrive.co/assets/images/banner/b2.gif</textarea>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 mt-4">
+                                            <div class="col-lg-6 mt-4">
                                                 <h3 class="fs-2xl fw-bold">New password:</h3>
                                                 <div class="input-group">
                                                     <div class="input-group-text text-primary">
@@ -858,7 +857,7 @@ https://www.minethrive.co/assets/images/banner/b2.gif</textarea>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 mt-4">
+                                            <div class="col-lg-6 mt-4">
                                                 <h3 class="fs-2xl fw-bold">Bitcoin Wallet:</h3>
                                                 <div class="input-group">
                                                     <div class="input-group-text text-primary">
@@ -870,7 +869,7 @@ https://www.minethrive.co/assets/images/banner/b2.gif</textarea>
                                             </div>
                                         </div>
                                         <div class="text-center mt-40">
-                                            <button class="btn btn-primary fs-md fw-bold">
+                                            <button class="mt-3 mt-md-0 btn btn-primary fs-md fw-bold">
                                                 Update Account
                                             </button>
                                         </div>
@@ -920,7 +919,7 @@ https://www.minethrive.co/assets/images/banner/b2.gif</textarea>
                                         <input type="text" class="transparent-input fw-medium fs-lg white-color"
                                             value="52HJR23MT7TSTHKBUDQRQUTXO5TFWQYY" readonly>
                                         <span class="fw-bold fs-md d-flex align-items-center white-color">
-                                            <button class="btn btn-primary py-3">
+                                            <button class="btn btn-primary py-0 py-sm-1 py-md-3">
                                                 Open 2FA App
                                             </button>
                                         </span>
@@ -936,7 +935,7 @@ https://www.minethrive.co/assets/images/banner/b2.gif</textarea>
                                         <input type="text" class="transparent-input fw-medium fs-lg white-color"
                                             value="123456">
                                         <span class="fw-bold fs-md d-flex align-items-center white-color">
-                                            <button class="btn btn-primary py-3">
+                                            <button class="btn btn-primary py-0 py-sm-1 py-md-3">
                                                 Enable Protection
                                             </button>
                                         </span>
@@ -956,19 +955,7 @@ https://www.minethrive.co/assets/images/banner/b2.gif</textarea>
     <!-- modals  -->
     <div id="modal" class="pb-0"></div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-
-    <script>
-        const checkbox = document.getElementById("checkbox")
-        checkbox.addEventListener("change", () => {
-            document.body.classList.toggle("dark")
-        })
-    </script>
-    </script>
 </body>
 
 </html>

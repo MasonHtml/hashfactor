@@ -24,19 +24,19 @@ color: red;
     border-radius: 8px;
 }
 .mt-60{
-    margin-top: clamp(30px, 8px + 3.6vw, 60px);
+    margin-top: clamp(20px, 8px + 3.6vw, 60px);
 }
 .mb-60{
-    margin-bottom: clamp(30px, 8px + 3.6vw, 60px);
+    margin-bottom: clamp(20px, 8px + 3.6vw, 60px);
 }
 .mt-40{
-    margin-top: clamp(30px, 3vw, 40px);
+    margin-top: clamp(10px, 3vw, 40px);
 }
 .mb-40{
-    margin-bottom: clamp(30px, 3vw, 40px);
+    margin-bottom: clamp(10px, 3vw, 40px);
 }
 .px-40{
-    padding-inline: clamp(30px, 3vw, 40px);
+    padding-inline: clamp(10px, 3vw, 40px);
 }
 .tabbing-pages{
     background: url("../images/common/secondry-bg.png") no-repeat center / cover;
@@ -70,7 +70,7 @@ ul.tabs{
     gap: 14px;
 }
 .commission-txt{
-    margin-top: clamp(20px, 9px + 1.7273vw, 40px);
+    margin-top: clamp(10px, 5px + 1.7273vw, 40px)
 }
 .copy-text {
 	position: relative;
@@ -156,7 +156,7 @@ ul.tabs{
     font-weight: 700;
 }
 .right-side {
-    width: calc(100% - 460px);
+    width: calc(100% - 500px);
     transition: all 0.2s ease-in-out;
 }
 .mining-overview{
@@ -184,7 +184,7 @@ padding: clamp(15px, 5px + 1.05vw, 24px);
 border-radius: 12px;
 }
 .main-tabs .tab-content {
-    padding: 0 clamp(20px, 7px + 1.7273vw, 40px);
+    padding: 0;
 }
 .feedback-box{
     margin-top: clamp(20px, 9px + 1.7273vw, 40px);
@@ -277,11 +277,11 @@ background-color: var(--blue-color-400);
     padding-block: clamp(14px, 6.5px + 0.7839vw, 20px);
 }
 #PowerCalculator .modal-dialog.modal-dialog-scrollable {
-    width: min(92%, 1360px);
+    width: min(65%, 1360px);
 }
 
 #PowerCalculator .modal-dialog .modal-content {
-    padding: clamp(20px, 9px + 1.7273vw, 40px);
+    padding: clamp(20px, 1.7273vw, 40px);
     background: #051139;
     border-radius: 12px;
     overflow: auto;
@@ -321,7 +321,7 @@ font-weight: 600;
     background-color: #000122;
     color: #fff;
     background-size: 45px;
-    background-position: 99% 12px;
+    background-position: 99% center;
     background-image: url(../images/icon/chevron-down-white.svg);
     background-repeat: no-repeat;
     appearance: none;
@@ -373,8 +373,10 @@ font-weight: 600;
 }
 .tabbing-pages.fullview .left-sidebar {
     width: 0;
+    height: 0;
     opacity: 0;
     z-index: -1;
+    transform: scale(0);
 }
 .tabbing-pages.fullview .right-side {
     width: 100%;
@@ -382,10 +384,11 @@ font-weight: 600;
 .fullview-toogle{
     cursor: pointer;
 }
-.feedback-box img{
+.star-image{
 height: auto;
 min-width: 30px;
 }
+
 .border-none, .border-none > * {
     border: none !important;
 }
@@ -410,13 +413,33 @@ min-width: 30px;
 .tabbing-pages p {
     text-wrap: pretty;
 } 
-
-@media screen and (max-width: 1024px) {
+.cst-textarea-dark > input {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media screen and (max-width: 1366px) {
+    .qr-code-image {
+        height: auto;
+        width: min(100%, 300px);
+    }
     .left-sidebar {
-        width: 360px;
+        width: 400px;
     }
     .right-side {
-        width: calc(100% - 360px);
+        width: calc(100% - 430px);
+    }
+}
+@media screen and (max-width: 1024px) {
+    .left-sidebar {
+        width: 340px;
+    }
+    .right-side {
+        width: calc(100% - 370px);
+    }
+    .qr-code-image {
+        height: auto;
+        width: min(100%, 200px);
     }
 }
 @media screen and (max-width: 991px) {
@@ -424,6 +447,55 @@ min-width: 30px;
         width: 300px;
     }
     .right-side {
-        width: calc(100% - 300px);
+        width: calc(100% - 330px);
+    }
+}
+@media screen and (max-width: 768px) {
+    .tabbing-main-row{
+        flex-direction: column !important;
+        gap: 20px;
+    }
+    .left-sidebar {
+        width: 100%;
+    }
+    .right-side{
+        width: 100%;
+    }
+    .main-tabs .tab-content{
+        padding-inline: 0;
+    }
+    .fullview-toogle{
+    display: none;
+    }
+}
+@media screen and (max-width: 575px) {
+    .withdraw-mining{
+        display: flex;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0px;
+    width: 100%;
+    padding-block: 20px 15px !important;
+    }
+    .withdraw-mining-span{
+        display: flex !important;
+        justify-content: space-between !important;
+        width: 100%;
+    }
+    .qr-code-image {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .calculator-footer {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .mobile-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        width: 100%;
+        gap: 10px;
     }
 }

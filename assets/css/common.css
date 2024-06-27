@@ -284,12 +284,16 @@ h1, h2, h3, h4, h5, h6,
 h3, h4, h5, h6 {
   margin-bottom: clamp( .8rem,  1.6vw,1.25rem);
 }
+span {
+  word-break: break-word;
+}
 p{
   font-size: var(--fs-base);
   color: rgba(var(--white-color-rgb), .9);
   font-weight: 400;
   margin-bottom: .3rem;
   text-wrap: balance;
+  word-break: break-word;
 }
 p:not(:last-child){ margin-bottom: 1rem;}
 a {
