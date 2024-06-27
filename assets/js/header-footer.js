@@ -7,13 +7,10 @@
        header.classList.remove('sticky');
    }
 });
-
-
 setTimeout(() => {
    const navbarMenu = document.getElementById("menu");
    const burgerMenu = document.getElementById("burger");
    const overlayMenu = document.querySelector(".overlay");
-
    // Check if burgerMenu and navbarMenu exist before adding event listener
    if (burgerMenu && navbarMenu) {
       burgerMenu.addEventListener("click", () => {
@@ -22,7 +19,6 @@ setTimeout(() => {
          document.body.classList.toggle("overflow-hidden"); // Selecting document.body directly
       });
    }
-
    // Close Navbar Menu on Click Links
    document.querySelectorAll(".menu-link").forEach((link) => {
       link.addEventListener("click", () => {
@@ -34,7 +30,6 @@ setTimeout(() => {
          }
       });
    });
-
    // Fixed Navbar Menu on Window Resize
    window.addEventListener("resize", () => {
       if (navbarMenu && overlayMenu && window.innerWidth >= 992) {
@@ -46,6 +41,3 @@ setTimeout(() => {
       }
    });
 }, 2000);
-
- 
-

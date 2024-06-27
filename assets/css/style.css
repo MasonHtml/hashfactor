@@ -132,7 +132,6 @@ table a {
     color: var(--blue-color-200);
     text-decoration: underline;
   }
-
   /* hardware-mining-power */
   .calculator-body,
   .calculator-content {
@@ -245,7 +244,6 @@ span.hourlypc.text-success {
     padding-right: 2vw;
 }
 /* login register */
-
 .credentials-banner {
     background: url(../images/inner/form-bg.png) no-repeat center/ cover;
 }
@@ -320,15 +318,12 @@ span.hourlypc.text-success {
         margin-left: -5vw;
     }
 }
-
-
 @media only screen and (min-width: 1280px) and (max-width: 1420px)  
     {  section.main-banner.banner {
     height: calc(100vh - 98px);
     padding-top: 0;
   }
 }
-
 @media (max-width:1280px) {
     .calculator-head .input-group img {
         max-width: 30px;

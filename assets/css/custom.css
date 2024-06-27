@@ -1,4 +1,3 @@
-
 .dark-blue-color{
     color: var(--dark-blue);
 }
@@ -174,7 +173,6 @@ ul.tabs{
     border-bottom: none;
     padding:clamp(14px, 6.5px + 0.7839vw, 20px) 0;
 }
-
 .left-sidebar .mining-overview{
 padding: clamp(15px, 5px + 1.05vw, 24px);
 margin-top: auto;
@@ -246,7 +244,6 @@ border-radius: 12px;
     color: var(--white-color);
     font-weight: 700;
 }
-
 .inner-tabbing .inner-tabs {
 gap: 2px;
 }
@@ -279,7 +276,6 @@ background-color: var(--blue-color-400);
 #PowerCalculator .modal-dialog.modal-dialog-scrollable {
     width: min(65%, 1360px);
 }
-
 #PowerCalculator .modal-dialog .modal-content {
     padding: clamp(20px, 1.7273vw, 40px);
     background: #051139;
@@ -388,7 +384,6 @@ font-weight: 600;
 height: auto;
 min-width: 30px;
 }
-
 .border-none, .border-none > * {
     border: none !important;
 }
@@ -400,7 +395,6 @@ min-width: 30px;
     width: 100%;
     text-align: left;
 }
-
 .tabbing-pages .input-group {
     max-width: 100%;
 }

@@ -45,11 +45,9 @@
 .feature-content a {
     margin-top: auto; 
 }
-
 .feature-card-ring {
     background-image: url(../images/home/ring-bg.png); background-position: center; background-repeat: no-repeat; background-size: contain;
 }
 .feature-card-border {
     background-image: url(../images/home/border-bg.png); background-position: bottom center; background-repeat: no-repeat; background-size: contain;
 }
-
