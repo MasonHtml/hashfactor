@@ -1,47 +1,48 @@
-.body.dark,
-html .dark {
+.body.light,
+html .light {
   background: var(--white-color);
 }
 
-.dark :where(.dark-color) .section-title,
-.dark :where(.dark-color) p,
-.dark :where(.dark-color) h1,
-.dark :where(.dark-color) h2,
-.dark :where(.dark-color) h3,
-.dark :where(.dark-color) a {
+
+.light :where(.dark-color) .section-title,
+.light :where(.dark-color) p,
+.light :where(.dark-color) h1,
+.light :where(.dark-color) h2,
+.light :where(.dark-color) h3,
+.light :where(.dark-color) a {
   color: var(--heading-dark-color);
 }
 
-.dark  :where(.dark-color) .btn-primary {
+.light  :where(.dark-color) .btn-primary {
   color: var(--white-color);
 }
-.dark  :where(.dark-color) .btn-primary-outline-lg {
+.light  :where(.dark-color) .btn-primary-outline-lg {
   color: var(--heading--dark-color);
 }
 
-.dark .burger-line {
+.light .burger-line {
   background-color: var(--heading--dark-color);
 }
 
-.dark .menu {
+.light .menu {
   background-color: #f9f9f9;
 }
 
-.dark .support-items:not(:last-child) {
+.light .support-items:not(:last-child) {
   border-bottom: 1px solid #bdbdbd;
 }
-.dark header {
+.light header {
   background-color: #f9f9f9;
   border-bottom: 1px solid #dfd7d7;
 }
-.dark  .founder-sec {
+.light  .founder-sec {
   background-color: transparent;
 }
-.dark .credentials-forms .form-control {
+.light .credentials-forms .form-control {
   background: #7f7daf;
 }
 @media (min-width: 1200px) {
-  .dark .line {
+  .light .line {
       background: #000;
       width: 1px;
       display: block;
@@ -51,47 +52,47 @@ html .dark {
   }
 }
 /* btn */
-.btn {
+.light  .btn {
   box-shadow: none;
 }
 
-.dark .plan {
+.light .plan {
   background: #262542;
 }
 
-.dark .effective-pricing {
+.light .effective-pricing {
   background: #f8f9fa;
 }
 
-.dark .recent-widthdrawals {
+.light .recent-widthdrawals {
   background: #fff;
 
 }
 
-.dark tbody>tr:nth-of-type(odd) {
+.light tbody>tr:nth-of-type(odd) {
   color: var(--primary-color);
   background-image: none;
   background-color: #f9f9f9;
 }
 
-.dark tbody>tr:nth-of-type(even) {
+.light tbody>tr:nth-of-type(even) {
   color: var(--primary-color);
 }
 
-.dark .plan.plan--free {
+.light .plan.plan--free {
   background: linear-gradient(#205175, #0a0526) padding-box, linear-gradient(0turn, #033442, #00c3ffa2, #00c5ff) border-box;
 }
 
-.dark .calculator-footer {
+.light .calculator-footer {
   background: var(--primary--color, rgb(33 35 37 / 15%));
 
 }
 
-.dark .calculator-content .btn-primary-outline,
-.dark .calculator-content .btn-primary-outline-lg {
+.light .calculator-content .btn-primary-outline,
+.light .calculator-content .btn-primary-outline-lg {
   color: var(--primary--color);
 }
 
-.dark .calculator-head .input-group {
+.light .calculator-head .input-group {
   background: #fff;
 }

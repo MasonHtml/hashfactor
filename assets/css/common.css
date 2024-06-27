@@ -42,7 +42,7 @@
 --gradient3:linear-gradient(280deg, #090d5c 99%, #28218c -10%);
  scroll-behavior: smooth;
 }
-:root .dark {
+:root .light {
   /*-------------colors---------- */
   --body-bg:#fff;
   --heading--dark-color:#141743;
