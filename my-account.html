@@ -21,7 +21,7 @@
     <!-- header start -->
     <header id="header"></header>
     <!-- header end -->
-    <section class="tabbing-pages">
+    <section class="tabbing-pages" id="main-tabbing-pages">
         <div class="container-fluid">
             <div class="d-flex flex-row">
                 <div class="left-sidebar dark-blue-bg">
@@ -108,10 +108,10 @@
                         <div id="tab-1" class="tab-content my-account-tab current">
                             <div class="dark-blue-bg account-info">
                                 <div class="d-flex align-items-center mb-3">
-                                    <a href="">
+                                    <span class="fullview-toogle" onclick="fullview()">
                                         <img src="assets/images/icon/bars-solid.svg" height="25" width="25" alt=""
                                             srcset="">
-                                    </a>
+                                    </span>
                                     <p class="ms-3 fs-3xl fw-bold">
                                         My Account
                                     </p>
@@ -123,7 +123,7 @@
                                 </div>
                                 <ul class="d-flex feedback-box">
                                     <li>
-                                        <img src="./assets/images/icon/start-box.svg" alt="" srcset="">
+                                        <img src="./assets/images/icon/start-box.svg" width="37" height="39" alt="" srcset="">
                                     </li>
                                     <li>
                                         <p class="fs-2xl white-color">Your Feedback means a lot!</p>
@@ -139,7 +139,7 @@
                             </div>
                             <section class="gradient-border py-60">
                                 <div class="row gy-md-4 gy-3">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6 col-xl-4">
                                         <div class="feature-card feature-card-icon rounded-16 gap-2  feature-card-ring">
                                             <div class="feature-content ">
                                                 <div class="feature-item">
@@ -156,7 +156,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-6 col-xl-4">
                                         <div class="feature-card feature-card-icon rounded-16 gap-2  feature-card-ring">
                                             <div class="feature-content ">
                                                 <div class="feature-item">
@@ -175,7 +175,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-6 col-xl-4">
                                         <div class="feature-card feature-card-icon rounded-16 gap-2  feature-card-ring">
                                             <div class="feature-content ">
                                                 <div class="feature-item">
@@ -220,7 +220,7 @@
                             <div class="calculator-content rounded-18 hardware-mining-power">
                                 <p class="text-start fs-3xl fw-bold py-40 pt-0 mb-0">Mining Power Calculator</p>
                                 <div class="calculator-head gradient p-60 py-40  rounded-18 rounded-tb-none">
-                                    <div class="row">
+                                    <div class="row align-items-end">
                                         <div class="col-md-6">
                                             <h3 class="fs-5xl fw-bold">Mining Hardware Costs:</h3>
                                             <div class="input-group">
@@ -242,8 +242,6 @@
                                                     <option value="inr">INR</option>
                                                 </select>
                                             </div>
-                                            <div class="mt-3 fs-lg white-color">Costs per unit: <span
-                                                    class="fw-bold unitprice neon-color"> 0.00013500 BTC</span></div>
                                         </div>
                                         <div class="col-md-6">
                                             <h3 class="fs-5xl fw-bold">Mining Power:</h3>
@@ -256,6 +254,8 @@
                                                         class="power">2.889 TH/s</span></output>
                                             </div>
                                         </div>
+                                        <div class="mt-3 fs-lg white-color">Costs per unit: <span
+                                            class="fw-bold unitprice neon-color"> 0.00013500 BTC</span></div>
                                     </div>
                                 </div>
                                 <div class="primary-bg calculator-body py-40 pt-0">
@@ -303,10 +303,10 @@
                             <div class="dark-blue-bg p-24 pb-0 rounded-12">
                                 <div class="d-flex align-items-center">
                                     <span class="d-flex align-items-center">
-                                        <a href="">
+                                        <span class="fullview-toogle" onclick="fullview()">
                                             <img src="assets/images/icon/bars-solid.svg" height="25" width="25" alt=""
                                                 srcset="">
-                                        </a>
+                                        </span>
                                         <p class="ms-3 fs-3xl fw-bold">
                                             Upgrade Miner
                                         </p>
@@ -477,7 +477,7 @@
                                     class="d-flex align-items-center justify-content-between mining-tab-text p-24 pt-0 dark-blue-bg">
                                     <span class="text-start fs-2xl fw-bold white-color">Invest your minings back into
                                         more hardware power!</span>
-                                    <span>
+                                    <span class="border-none">
                                         <button class="btn btn-primary fs-md fw-bold"> Upgrade Now</button>
                                     </span>
                                 </div>
@@ -546,10 +546,10 @@
                             <div class="dark-blue-bg p-24 rounded-12">
                                 <div class="d-flex align-items-center">
                                     <span class="d-flex align-items-center">
-                                        <a href="">
+                                        <span class="fullview-toogle" onclick="fullview()">
                                             <img src="assets/images/icon/bars-solid.svg" height="25" width="25" alt=""
                                                 srcset="">
-                                        </a>
+                                        </span>
                                         <p class="ms-3 fs-3xl fw-bold">
                                             Partnership
                                         </p>
@@ -683,10 +683,10 @@ https://www.minethrive.co/assets/images/banner/b2.gif</textarea>
                                 <div class="p-24 pb-0">
                                     <div class="d-flex align-items-center">
                                         <span class="d-flex align-items-center">
-                                            <a href="">
-                                                <img src="assets/images/icon/bars-solid.svg" height="25" width="25"
-                                                    alt="" srcset="">
-                                            </a>
+                                            <span class="fullview-toogle" onclick="fullview()">
+                                                <img src="assets/images/icon/bars-solid.svg" height="25" width="25" alt=""
+                                                    srcset="">
+                                            </span>
                                             <p class="ms-3 fs-3xl fw-bold">
                                                 BTC Withdrawal
                                             </p>
@@ -812,10 +812,10 @@ https://www.minethrive.co/assets/images/banner/b2.gif</textarea>
                                 <div class="p-24 pb-0">
                                     <div class="d-flex align-items-center">
                                         <span class="d-flex align-items-center">
-                                            <a href="">
-                                                <img src="assets/images/icon/bars-solid.svg" height="25" width="25"
-                                                    alt="" srcset="">
-                                            </a>
+                                            <span class="fullview-toogle" onclick="fullview()">
+                                                <img src="assets/images/icon/bars-solid.svg" height="25" width="25" alt=""
+                                                    srcset="">
+                                            </span>
                                             <p class="ms-3 fs-3xl fw-bold">
                                                 Preferences
                                             </p>

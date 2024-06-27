@@ -230,3 +230,7 @@ copyText.querySelector("button").addEventListener("click", function () {
 });
 }, 1000)
 
+function fullview() {
+  var element = document.getElementById("main-tabbing-pages");
+  element.classList.toggle("fullview"); 
+}
