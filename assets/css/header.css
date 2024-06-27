@@ -288,11 +288,6 @@ body.overflow-hidden:before {
 .top-bar {
   padding-block: clamp(5px, 1.2vw, 15px);
   background: #3b088b;
-  transition: .3s ease-in-out;
-  -webkit-transition: .3s ease-in-out;
-  -moz-transition: .3s ease-in-out;
-  -ms-transition: .3s ease-in-out;
-  -o-transition: .3s ease-in-out;
 }
 .site-menu-toggle.js-menu-toggle img {
   height: 20px;
@@ -361,9 +356,7 @@ body.overflow-hidden:before {
 .mode-changer {
   margin: 0 8px 0 10px;
 }
-body.dark {
-  background-color: #292c35;
-}
+
 /* #9b59b6 */
 .mode-changer .checkbox {
   opacity: 0;
@@ -393,16 +386,15 @@ body.dark {
   left: 5px;
   top: 4px;
   border-radius: 50%;
-  transition: transform 0.2s linear;
+  transition: transform 0.2s ease-out;
   background-image: url(../images/icon/sun-solid.svg);
   background-size: 17px;
   background-repeat: no-repeat;
   background-position: center;
-  transition: .3s ease-in-out;
-  -webkit-transition: .3s ease-in-out;
-  -moz-transition: .3s ease-in-out;
-  -ms-transition: .3s ease-in-out;
-  -o-transition: .3s ease-in-out;
+  -webkit-transition: transform 0.2s ease-out;
+  -moz-transition: transform 0.2s ease-out;
+  -ms-transition: transform 0.2s ease-out;
+  -o-transition: transform 0.2s ease-out;
 }
 .mode-changer .checkbox:checked+.checkbox-label .ball {
   transform: translateX(26px);
@@ -414,11 +406,7 @@ body.dark {
   -moz-transform: translateX(26px);
   -ms-transform: translateX(26px);
   -o-transform: translateX(26px);
-  transition: .3s ease-in-out;
-  -webkit-transition: .3s ease-in-out;
-  -moz-transition: .3s ease-in-out;
-  -ms-transition: .3s ease-in-out;
-  -o-transition: .3s ease-in-out;
+
 }
 @media only screen and (max-width: 768px) {
   /* .brand {

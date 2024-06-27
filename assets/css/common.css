@@ -42,7 +42,7 @@
 --gradient3:linear-gradient(280deg, #090d5c 99%, #28218c -10%);
  scroll-behavior: smooth;
 }
-:root .dark {
+:root .light {
   /*-------------colors---------- */
   --body-bg:#fff;
   --heading--dark-color:#141743;
@@ -276,7 +276,7 @@
 /* -------------------------- */
 h1, h2, h3, h4, h5, h6,
 .section-head .section-title {
-  margin-bottom:1.25rem;
+  margin-bottom: clamp( 1rem,  1.6vw,1.25rem);
   font-weight: 700;
   line-height: normal;
   color: var(--heading-color);
@@ -441,13 +441,16 @@ body.modal-open,.overflow-hidden {
   p{
     line-height: 140%;
   }
-.btn-lg{
-  min-width: 229px;
+  .btn-lg {
+    min-width: 172px;
 }
 }
 @media (min-width:1399px){
   .container-fluid{
     padding-inline:clamp(2%, 4%, 5%);
     max-width: 2560px;
+}
+.btn-lg{
+  min-width: 229px;
 }
 }

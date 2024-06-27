@@ -25,7 +25,7 @@
                   <option value="INR">INR</option>
                </select>
                <div class="mode-changer d-flex align-items-center ">
-                  <input type="checkbox" class="checkbox" id="checkbox">
+                  <input type="checkbox" class="checkbox" id="checkbox" checked onchange="toggleTheme()">
                   <label for="checkbox" class="checkbox-label mb-0">
                      <span class="ball"></span>
                   </label>
@@ -36,7 +36,7 @@
    </div>
 </div>
 <div class="container-fluid">
-   <nav class="navbar">
+   <nav class="navbar dark-color">
       <a href="/" class="brand"><img src="./assets/images/common/main-logo.png" alt="" srcset=""></a>
       <div class="burger" id="burger">
          <span class="burger-line"></span>
@@ -54,7 +54,7 @@
             <li class="menu-item"><a href="login.html"
                   class="menu-link btn btn-primary-outline d-inline-block d-xl-none ms-0 w-50 text-center">Log In</a></li>
             <li class="menu-item"><a href="sign-up.html"
-                  class="menu-link btn btn-primary d-inline-block d-xl-none ms-0 w-50 text-center">Register</a></li>
+                  class="menu-link btn btn-primary d-inline-block d-xl-none ms-0 w-50 text-center white-color">Register</a></li>
          </ul>
       </div>
       <!-- <button class="switch" id="switch">
@@ -63,7 +63,7 @@
   </button> -->
       <div class="btn-group d-none d-xl-block">
          <a href="login.html" class="btn btn-primary-outline me-0"> <span class="px-4">Log In</span></a>
-         <a href="sign-up.html" class="btn btn-primary"> <span class="px-3">Register</span></a>
+         <a href="sign-up.html" class="btn btn-primary"> <span class="px-3 white-color">Register</span></a>
       </div>
    </nav>
 </div>
