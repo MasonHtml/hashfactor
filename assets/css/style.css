@@ -223,6 +223,7 @@ span.hourlypc.text-success {
 /* partner-program */
 .partner-program {
     background: url(../images/inner/partner-program-bg.png) no-repeat center /cover;
+    overflow: hidden;
 }
 .partner-program-bottom {
     background: url(../images/inner/partner-program-bg2.png) no-repeat center /cover;
@@ -244,11 +245,7 @@ span.hourlypc.text-success {
     padding-right: 2vw;
 }
 /* login register */
-.form-left img {
-    width: calc(100% + 1vw);
-    max-width: inherit;
-    margin-left: -5vw;
-}
+
 .credentials-banner {
     background: url(../images/inner/form-bg.png) no-repeat center/ cover;
 }
@@ -287,7 +284,7 @@ span.hourlypc.text-success {
 .support-items {
     padding-block: clamp(40px, 10px + 3.8vw, 80px);
     display: grid;
-    margin-inline: 30px;
+    /* margin-inline: 30px; */
 }
 .support-items:last-child {
     padding-bottom: 0;
@@ -316,6 +313,11 @@ span.hourlypc.text-success {
         height: 100%;
         margin: auto;
         opacity: .2;
+    }
+    .form-left img {
+        width: calc(100% + 1vw);
+        max-width: inherit;
+        margin-left: -5vw;
     }
 }
 
