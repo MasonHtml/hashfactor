@@ -9,6 +9,7 @@
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 .mining-feature .feature-card {
@@ -373,7 +374,9 @@ span.hourlypc.text-success {
 .support-sec {
     background: url(../images/inner/support-bg.png) no-repeat center/ cover;
 }
-
+.pricing-bg {
+    background: url(../images/inner/pricing-bg.png) no-repeat center/ cover;
+}
 @media (min-width:1200px) {
     .get-touch-row {
         display: grid;
