@@ -24,14 +24,29 @@ html .light {
 .light .burger-line {
   background-color: var(--heading--dark-color);
 }
-.light .menu {
-  background-color: #f9f9f9;
+.light .menu.is-active {
+  background-color: #f6f9ff;
+}
+.light .dark-color .feature-card .white-color
+ {
+  color: var(--heading--dark-color);
+}
+.light .dark-color .badge-transparent {
+  background-color: #87A5EF;
+  background-color: #BDD1FF;
+}
+.light .bitcoin-features {
+  background: #fff;
+}
+.light  .effective-bitcoin {
+  background: #EDF2FE;
 }
 .light .support-items:not(:last-child) {
   border-bottom: 1px solid #bdbdbd;
 }
 .light header {
   background-color: #f9f9f9;
+  background-color: #f6f9ff;
   border-bottom: 1px solid #dfd7d7;
 }
 .light  .founder-sec {
@@ -54,11 +69,11 @@ html .light {
 .light  .btn {
   box-shadow: none;
 }
-.light .plan {
+/* .light .plan {
   background: #262542;
-}
+} */
 .light .effective-pricing {
-  background: #f8f9fa;
+  background: #EDF2FE;
 }
 .light .recent-widthdrawals {
   background: #fff;

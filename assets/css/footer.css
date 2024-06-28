@@ -8,14 +8,18 @@ footer {
     display: inline-block;
     aspect-ratio: 1/1;
     border-radius: 100px;
-    background: var(--white-color);
+    background: var(--white-color) ;
     vertical-align: middle;
     margin-right: 10px;
 }
 .nav-footer-item a {
-    color: var(--white-color);
+    color: var(--white-color) !important;
     font-size: var(--fs-xl);
     position: relative;
+}
+.nav-footer a{
+    color: var(--white-color) !important;
+
 }
 .footer-item  img{
     width: min(80%, 417px);
