@@ -4,18 +4,7 @@ html .light {
   background: #D0DFFF;
   background: #EDF2FE;
 }
-.light  .dark-blue-bg , .light .gradient-border .feature-card  {
-  background: #BDD1FF;
-}
-.light .tabbing-pages .blue-color-400, .light .left-sidebar .account-tabs li, .light .copy-text , .light .gradient {
-  background: #87A5EF;
-}
-.light .tabbing-pages .dark-color *{
-  color: var(--heading--dark-color);
-}
-.light .feature-card{
-  box-shadow: none;
-}
+
 .light :where(.dark-color) .section-title,
 .light :where(.dark-color) p,
 .light :where(.dark-color) h1,
@@ -49,7 +38,7 @@ html .light {
   background-color: transparent;
 }
 .light .credentials-forms .form-control {
-  background: #7f7daf;
+  background: #BDD1FF;
 }
 @media (min-width: 1200px) {
   .light .line {
@@ -94,4 +83,44 @@ html .light {
 }
 .light .calculator-head .input-group {
   background: #fff;
+}
+.light  .dark-blue-bg , .light .gradient-border .feature-card  {
+  background: #BDD1FF;
+}
+.light .tabbing-pages .blue-color-400, .light .left-sidebar .account-tabs li, .light .copy-text , .light .gradient , .light ul.inner-tabs , .light .inner-tab-content .mining-overview , .light thead tr , .light .cst-textarea-dark , .light .cst-gradian-bg {
+  background: #87A5EF;
+}
+.light thead tr , .light .cst-textarea-dark, .light .withdraw-mining-span, .light .cst-gradian-bg span, .light .cst-textarea-dark input ,.light .feature-card .feature-item{
+  color: var(--heading--dark-color);
+}
+.light .banner-select{
+background-color:#87A5EF ;
+color: var(--heading--dark-color);
+}
+.light .tabbing-pages .dark-color *{
+  color: var(--heading--dark-color);
+}
+.light .feature-card , .light .inner-tabs .inner-tabbing-btn{
+  box-shadow: none;
+}
+.light .fullview-toogle img {
+  filter: invert(1);
+}
+.light ul.tabs li.current{
+  border-bottom: 0px;
+}
+.light #PowerCalculator .modal-dialog .modal-content{
+  background-color: #5b72bf;
+}
+.light #PowerCalculator .modal-dialog .modal-content *{
+color: #000; 
+}
+.light .hardware-mining-power .list-group-item {
+  border-top: 1px solid #10101042;
+}
+.light .calculator-footer{
+  background-color: #87a5ef; 
+}
+.light #PowerCalculator .close-btn {
+  filter: invert(0);
 }
