@@ -9,30 +9,35 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.dark .bitcoin-features {
+.light .bitcoin-features {
     background: #fff;
 }
 /* .certified-bitcoin */
 .certified-bitcoin {
-    background: url(../images/home/certified-bitcoin.png) no-repeat center/ cover;
+    background: #023074
 }
 /* .dark .effective-pricing {
     background: var(--primary-color);
 } */
+
+
 .certified-item {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
-    align-items: center;
-    place-items: center;
-    background: var(--white-color);
-    border-radius: 18px;
-}
+display: flex;
+gap: clamp(15px, 2vw, 15px);
+flex-wrap: wrap;
+justify-content: center;
+
+    }
+    
+
+
+    .certified-item img{
+        background: var(--white-color);
+    }
 /* effective-pricing  */
 .effective-pricing {
     background: url(../images/home/pricing-bg.png) no-repeat center/cover;
+    /* background-color: #000000d8; */
 }
 /* plan css */
 .plan {
@@ -41,7 +46,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    background: #26254296;
+    background: #262542eb;
 }
 .plan-items {
     display: flex;
@@ -49,47 +54,65 @@
     align-items: center;
     flex-grow: 1;
     height: 100%;
+    position: relative;
+    z-index: 1;
 }
-.plan::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    border-radius: 15px;
-    opacity: 1;
-    box-sizing: border-box
-}
-.plan--free::before {
-    background: linear-gradient(#205175, #0a0526) padding-box, linear-gradient(0turn, #033442, #00c3ffa2, #00c5ff) border-box;
+
+.plan--free {
+    background: linear-gradient(#2C79B1, #160B5A) padding-box, linear-gradient(0turn, #033442, #00c3ffa2, #00c5ff) border-box;
     border: 2px solid transparent;
 }
-.plan--free .plan-title {
-    border-bottom: 1px solid #00c5ff8a;
+
+
+.plan--free .plan-head {
+    background: linear-gradient(#3772EB, #115BAA) padding-box, linear-gradient(0turn, #000000, #00c3ffa2, #00c5ff) border-box;
+    border-radius: 15px  15px 0 0;
+    /* border-bottom: 0; */
+    -webkit-border-radius: 15px  15px 0 0;
+    -moz-border-radius: 15px  15px 0 0;
+    -ms-border-radius: 15px  15px 0 0;
+    -o-border-radius: 15px  15px 0 0;
+    border-bottom: 1px solid #00C5FF;
 }
-.plan--blue::before {
+.plan--blue {
     background: linear-gradient(#262542, #161329) padding-box, linear-gradient(0turn, #222E4E, #5b5a88ad, #5B5A88) border-box;
     border: 2px solid transparent;
 }
-.plan--blue .plan-title {
-    border-bottom: 1px solid #5B5A88;
+
+.plan--blue .plan-head {
+    background: linear-gradient(#5653EF, #0A266D) padding-box, linear-gradient(0turn, #000000, #00c3ffa2, #00c5ff) border-box;
+    border-radius: 15px  15px 0 0;
+    /* border-bottom: 0; */
+    -webkit-border-radius: 15px  15px 0 0;
+    -moz-border-radius: 15px  15px 0 0;
+    -ms-border-radius: 15px  15px 0 0;
+    -o-border-radius: 15px  15px 0 0;
+    border-bottom: 1px solid #00C5FF;
+}
+.plan--blue .plan-head{
+    border-bottom: 1px solid #423DD9;
 }
 .plan-title {
-    font-size: var(--fs-6xl);
-    padding-block: clamp(16px, 4px + 1.6364vw, 35px);
-    margin-bottom: 0;
+    font-size: var(--fs-4xl);
+    background: #ffffff1c;
+    display: inline-block;
+    padding: 10px 29px;
+    border-radius: 100px;
+}
+
+.plan .plan-head {    padding-block: clamp(15px, 4px + 1.6vw, 30px); position: relative; z-index: 1;
 }
 p.plan-price {
-    font-size: var(--fs-6xl);
+    font-size: var(--fs-5xl);
     margin-bottom: 0;
 }
 .plan-price span {
     display: block;
     font-weight: 500;
-    font-size: var(--fs-5xl);
+    font-size: var(--fs-3xl);
     color: var(--highlight-color);
     margin-top: 5px;
+    line-height: normal;
 }
 .plan-description li {
     margin-bottom: clamp(8px, 1vw, 16px);
@@ -97,13 +120,15 @@ p.plan-price {
     color: var(--white-color);
 }
 ul.plan-description {
-    padding-block: clamp(20px, 3vw, 40px);
+    padding-bottom: clamp(20px, 3vw, 40px);
 }
 .plan .btn {
     padding-inline: clamp(22px, 13px + 1.9vw, 48px);
     box-shadow: none;
     margin-top: auto;
+    width: calc(100% - 50px);
 }
+
 /* home table css */
 .table-responsive {
     overflow-x: auto;
@@ -317,6 +342,13 @@ span.hourlypc.text-success {
         max-width: inherit;
         margin-left: -5vw;
     }
+    .plan  .btn-primary-outline-lg{
+        background-image:url(../images/inner/btn-xl.png) ;
+        background-size: contain;
+    }
+    .plan-title {
+        min-width: 213px
+    }
 }
 @media only screen and (min-width: 1280px) and (max-width: 1420px)  
     {  section.main-banner.banner {
@@ -324,9 +356,15 @@ span.hourlypc.text-success {
     padding-top: 0;
   }
 }
+
 @media (max-width:1280px) {
     .calculator-head .input-group img {
         max-width: 30px;
         padding: 2%;
+    }
+    .certified-item img {
+        height: 50%;
+        max-height: 90px;
+        max-width: fit-content;
     }
 }
