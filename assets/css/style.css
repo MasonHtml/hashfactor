@@ -583,11 +583,43 @@ span.hourlypc.text-success {
         max-width: fit-content;
     }
 }
+@media screen and (max-width: 991px) {
+  
+    .timeline__event {
+        margin: 0px 0;
+    }
+    .timeline__event__content {
+        padding: 0 15px 20px;
+    }
+    .time-line-icon {
+        width: 40px;
+        height: 40px;
+        flex: 0 0 40px;
+        padding: 10px;
+        position: unset !important;
+        transform: translateY(0);
+    }
+    .timeline{
+        margin: 0 20px;
+    }
+}
+
 @media (max-width: 786px) {
     .timeline__event {
       flex-direction: column;
     }  
     .timeline__event__icon {
       border-radius: 4px 4px 0 0;
+    }
+    .time-line-icon {
+        width: 30px;
+        height: 30px;
+        flex: 0 0 30px;
+        padding: 7px;
+        position: unset !important;
+        transform: translateY(0);
+    }
+    .timeline {
+        margin: 0 10px;
     }
   }
