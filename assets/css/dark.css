@@ -105,7 +105,7 @@ html .light {
 .light .tabbing-pages .blue-color-400, .light .left-sidebar .account-tabs li, .light .copy-text , .light .gradient , .light ul.inner-tabs , .light .inner-tab-content .mining-overview , .light thead tr , .light .cst-textarea-dark , .light .cst-gradian-bg {
   background: #87A5EF;
 }
-.light thead tr , .light .cst-textarea-dark, .light .withdraw-mining-span, .light .cst-gradian-bg span, .light .cst-textarea-dark input ,.light .feature-card .feature-item{
+.light thead tr , .light .cst-textarea-dark, .light .withdraw-mining-span, .light .cst-gradian-bg span, .light .cst-textarea-dark input ,.light .feature-card .feature-item , .light .timeline__event__title{
   color: var(--heading--dark-color);
 }
 .light .banner-select{

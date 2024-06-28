@@ -451,6 +451,12 @@ min-width: 30px;
     .right-side {
         width: calc(100% - 330px);
     }
+    .timeline__event {
+        margin: 0px 0 !important;
+    }
+    .timeline__event__content {
+        padding: 15px 20px !important;
+    }
 }
 @media screen and (max-width: 768px) {
     .tabbing-main-row{

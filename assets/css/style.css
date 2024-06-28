@@ -377,11 +377,18 @@ span.hourlypc.text-success {
 .pricing-bg {
     background: url(../images/inner/pricing-bg.png) no-repeat center/ cover;
 }
+.mining-section{
+    margin-top: clamp(40px, 8px + 3.8vw, 90px);
+}
+.mining-section-image img{
+    max-width: min(600px, 100%);
+}
 .timeline {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     width: 100%;
-    margin: 5% auto;
+    margin: 0 auto;
+    position: relative;
   }
   .timeline__event {
     background: transparent;
@@ -392,11 +399,7 @@ span.hourlypc.text-success {
     border-radius: 8px;
   }
   .timeline__event__title {
-    font-size: 1.2rem;
-    line-height: 1.4;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #9251ac;
+    color: var(--white-color);
     letter-spacing: 1.5px;
   }
   .timeline__event__content {
@@ -419,38 +422,58 @@ span.hourlypc.text-success {
     color: #9251ac;
     padding: 20px;
   }
-  .time-line-icon img {
-    position: absolute;
-    top: 50%;
-    left: -65px;
-    font-size: 2.5rem;
-    transform: translateY(-50%);
-  }
   .timeline__event__description {
     flex-basis: 60%;
   }
-  .timeline__event:after {
+  .timeline:after {
     content: "";
     width: 2px;
-    height: 100%;
-    background: #9251ac;
+    height: 115%;
+    background: #353551;
     position: absolute;
-    top: 52%;
+    top: -15%;
     left: -3.5rem;
-    z-index: -1;
-  }
-  .timeline__event:before {
+    z-index: 9;
+}
+.col-lg-5 .timeline:first-child:before {
     content: "";
-    width: 5rem;
-    height: 5rem;
+    width: 15px;
+    height: 15px;
+    background: #353551;
     position: absolute;
-    background: #f6a4ec;
+    top: -15%;
+    left: -3.9rem;
+    z-index: 9;
+    border-radius: 50%;
+}
+.col-lg-5 .timeline:last-child:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #353551;
+    position: absolute;
+    top: 95%;
+    left: -3.85rem;
+    z-index: 9;
+    border-radius: 50%;
+}
+.time-line-icon {
+    width: 60px;
+    height: 60px;
+    flex: 0 0 60px;
+    aspect-ratio: 1 / 1;
+    position: absolute;
     border-radius: 100%;
-    left: -6rem;
-    top: 50%;
+    left: -5.3rem;
+    top: 30%;
     transform: translateY(-50%);
-    border: 2px solid #9251ac;
-  }
+    background: linear-gradient(84.17deg, #7817FF 3.08%, #48B5F5 128.86%);
+    z-index: 19;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
   .timeline__event--type2:before {
     background: #87bbfe;
     border-color: #555ac0;
@@ -539,6 +562,14 @@ span.hourlypc.text-success {
         background-size: cover;
         background-position: center;
     }
+}
+@media (min-width:1440px) {
+    .time-line-icon {
+        width: 80px;
+        height: 80px;
+        flex: 0 0 80px;
+        left: -6rem
+        ;}
 }
 @media (max-width:1280px) {
     .calculator-head .input-group img {
