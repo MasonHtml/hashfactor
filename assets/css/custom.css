@@ -413,6 +413,7 @@ min-width: 30px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 @media screen and (max-width: 1366px) {
     .qr-code-image {
         height: auto;
