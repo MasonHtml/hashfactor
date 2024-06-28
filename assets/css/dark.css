@@ -65,9 +65,9 @@ html .light {
 .light  .btn {
   box-shadow: none;
 }
-.light .plan {
+/* .light .plan {
   background: #262542;
-}
+} */
 .light .effective-pricing {
   background: #f8f9fa;
 }
