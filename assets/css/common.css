@@ -151,11 +151,15 @@ body,html{
 .blue-bg-100 {
   background-color: var(--blue-color-100) !important;
 }
-.badge-purple {
-  background-color: #9D67FE;
+.badge-transparent {
+  background-color: #ffffff21;
 }
 .badge-blue {
   background-color: #87B0F9;
+}
+.bg-transparent{
+  background-color: transparent !important;
+  border: 1px solid #48B5F5;
 }
 /* gradient css */
 .gradient{
@@ -191,7 +195,7 @@ body,html{
   min-width: 95px;
   max-height: 58px;
 }
-.btn:not(:last-child) {margin-right: clamp(14px, 6.5px + 0.7839vw, 20px);}
+/* .btn:not(:last-child) {margin-right: clamp(14px, 6.5px + 0.7839vw, 20px);} */
 .btn-primary {
   background-image: linear-gradient(63deg, #7817ff 3%, #48b5f5 131%);
   --hover-text:#fdfdfdc0;
@@ -344,6 +348,7 @@ video {
 .w-100{
   width: 100%;
 }
+
 .boder-none{
   border: none;
 }
@@ -443,6 +448,9 @@ body.modal-open,.overflow-hidden {
   }
   .btn-lg {
     min-width: 172px;
+}
+.min-w-200 {
+  min-width: 200px;
 }
 }
 @media (min-width:1399px){
