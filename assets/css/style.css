@@ -30,17 +30,17 @@
 
 .certified-item {
     display: flex;
-    gap: clamp(15px, 2vw, 15px);
-    flex-wrap: wrap;
+    /* gap: clamp(15px, 2vw, 15px);
+    flex-wrap: wrap; */
     justify-content: center;
 
 }
 
 
 
-.certified-item img {
+/* .certified-item img {
     background: var(--white-color);
-}
+} */
 
 /* effective-pricing  */
 .effective-pricing {
@@ -403,7 +403,7 @@ span.hourlypc.text-success {
     letter-spacing: 1.5px;
   }
   .timeline__event__content {
-    padding: 20px;
+    padding: 0 20px 40px 20px;
   }
   .timeline__event__date {
     color: #f6a4ec;
@@ -555,21 +555,22 @@ span.hourlypc.text-success {
         height: calc(100vh - 98px);
         padding-top: 0;
     }
+   
 }
 
-@media (max-width:667px) {
-    .mining-feature .feature-card {
-        background-size: cover;
-        background-position: center;
-    }
-}
-@media (min-width:1440px) {
+
+@media (min-width:1650px) {
     .time-line-icon {
         width: 80px;
         height: 80px;
         flex: 0 0 80px;
         left: -6rem
         ;}
+}
+@media (max-width:1519px) {
+    .time-line-icon {
+        top: 23%;
+    }
 }
 @media (max-width:1280px) {
     .calculator-head .input-group img {
@@ -579,8 +580,13 @@ span.hourlypc.text-success {
 
     .certified-item img {
         height: 50%;
-        max-height: 90px;
+        max-height:200px;
         max-width: fit-content;
+    }
+ 
+    .get-touch-grid {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
     }
 }
 @media screen and (max-width: 991px) {
@@ -603,7 +609,15 @@ span.hourlypc.text-success {
         margin: 0 20px;
     }
 }
-
+@media (max-width:667px) {
+    .mining-feature .feature-card {
+        background-size: cover;
+        background-position: center;
+    }
+    .get-touch-grid {
+        display: unset;
+    }
+}
 @media (max-width: 786px) {
     .timeline__event {
       flex-direction: column;
@@ -612,13 +626,14 @@ span.hourlypc.text-success {
       border-radius: 4px 4px 0 0;
     }
     .time-line-icon {
-        width: 30px;
-        height: 30px;
-        flex: 0 0 30px;
-        padding: 7px;
+        width: 40px;
+        height: 40px;
+        flex: 0 0 40px;
+        padding: 0px;
         position: unset !important;
         transform: translateY(0);
     }
+    .time-line-icon img{max-width: 20px;}
     .timeline {
         margin: 0 10px;
     }
