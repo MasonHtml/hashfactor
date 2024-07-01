@@ -102,7 +102,7 @@ html .light {
 .light  .dark-blue-bg , .light .gradient-border .feature-card  {
   background: #BDD1FF;
 }
-.light .tabbing-pages .blue-color-400, .light .left-sidebar .account-tabs li, .light .copy-text , .light .gradient , .light ul.inner-tabs , .light .inner-tab-content .mining-overview , .light thead tr , .light .cst-textarea-dark , .light .cst-gradian-bg {
+.light .tabbing-pages .blue-color-400, .light .left-sidebar .account-tabs li, .light .copy-text , .light .gradient , .light ul.inner-tabs , .light .inner-tab-content .mining-overview , .light thead tr , .light .cst-textarea-dark , .light .cst-gradian-bg, .light .profile-box {
   background: #87A5EF;
 }
 .light thead tr , .light .cst-textarea-dark, .light .withdraw-mining-span, .light .cst-gradian-bg span, .light .cst-textarea-dark input ,.light .feature-card .feature-item , .light .timeline__event__title{
